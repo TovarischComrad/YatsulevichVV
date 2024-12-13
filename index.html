@@ -1,10 +1,28 @@
 <!DOCTYPE html>
-<html>
+<head>
+    <title>Стартовая страница</title>
+    <script type="text/x-mathjax-config">
+        MathJax.Hub.Config({tex2jax: {inlineMath: [['$','$'], ['\\(','\\)']]}});
+    </script>
+    <script type="text/javascript"
+        src="http://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
+    </script>
+</head>
 <body>
+    <h1>Заголовок</h1>
+    Это кусочек кода.<br>
+    <code>
+        int x = 0;<br>
+        
+        int y = 2;<br>
+        
+        int z = x + y;<br>
+    </code><br>
+    Это кусочек математики.<br>
 
-<h1>My First Heading</h1>
-<p>My first paragraph.</p>
-<p>My second paragraph.</p>
+    Рассмотрим квадратное уравнение $ax^2 + bx + c = 0$. Его решение имеет вид:
+    \[
+    x_{1, 2} = \frac{-b \pm \sqrt{b^2 - 4ac}}{2a}.
+    \]
 
 </body>
-</html>
