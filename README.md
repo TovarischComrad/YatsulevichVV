@@ -1,3 +1,3 @@
-# TovariscgComrad.github.io
+# TovarischComrad.github.io
 
 Здесь будет информация
