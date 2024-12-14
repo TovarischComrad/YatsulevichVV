@@ -7,33 +7,65 @@ html, body {
     padding: 0;
     height: 100%;
     width: 100%;
+    font-size: 20px;
+    background: #393E46;
+}
+
+.sentence {
+    text-indent: 25px;
+}
+
+.image {
+    margin: 20px;
+    margin-left: 200px;
+    margin-right: 200px;
+}
+
+.image img{
+    margin: auto;
+    display: block;
+}
+
+.problem {
+    text-indent: 25px;
+    padding: 10px;
+    margin: 20px;
+    margin-left: 100px;
+    margin-right: 100px;
+    border-radius: 10px;
+    text-align: justify;
+    align-self: center;
+    background-color: rgb(205, 205, 205);
 }
 
 .header {
     padding: 60px;
     text-align: center;
-    background: #1abc9c;
+    background: #00ADB5;
     font-size: 30px;
-    border-bottom: 1px solid;
 }
 
 .table_of_content {
+    min-height: 800px;
     float: left;
     width: 15%;
-    padding: 10px;
+    padding: 25px;
+    background: #393E46;
+    color: #EEEEEE;
 }
 
 .main_content {
+    min-height: 800px;
     float: left;
+    float: bottom;
     width: 85%;
-    padding: 10px;
-    border-left: 1px solid;
-    height: 100%;
+    padding: 25px;
+    background: #EEEEEE;
 }
 
 .row:after {
+    /* min-height: 800px; */
     bottom: 0;
-    height: 70%;
     content: "";
     display: table;
     clear: both;
@@ -42,10 +74,29 @@ html, body {
 .footer {
     padding: 30px;
     text-align: center;
-    background: #1abc9c;
+    background: #222831;
     font-size: 30px;
-    border-top: 1px solid black;
-    bottom: 0;
     width: 100%;
     color: white;
+}
+
+a:link {
+    color: #EEEEEE;
+    background-color: transparent;
+    text-decoration: none;
+}
+a:visited {
+    color: #EEEEEE;
+    background-color: transparent;
+    text-decoration: none;
+}
+a:hover {
+    color: #00ADB5;
+    background-color: transparent;
+    text-decoration: underline;
+}
+a:active {
+    color: #00ADB5;
+    background-color: transparent;
+    text-decoration: underline;
 }
