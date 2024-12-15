@@ -7,9 +7,10 @@ html, body {
     padding: 0;
     height: 100%;
     width: 100%;
-    font-size: 20px;
+    font-size: 18px;
     background: #749BC2;
     font-family: Verdana, sans-serif;
+    color: #08334b;
 }
 
 .header_in {
@@ -42,6 +43,8 @@ html, body {
     align-self: center;
     background-color: rgb(205, 205, 205);
 }
+
+/* Structure of page */
 
 .header {
     padding: 25px;
@@ -87,23 +90,56 @@ html, body {
     color: white;
 }
 
-a:link {
+/* Link for table of content */
+
+.a1:link {
     color: #EEEEEE;
     background-color: transparent;
     text-decoration: none;
 }
-a:visited {
+.a1:visited {
     color: #EEEEEE;
     background-color: transparent;
     text-decoration: none;
 }
-a:hover {
+.a1:hover {
     color: #91C8E4;
     background-color: transparent;
     text-decoration: underline;
 }
-a:active {
+.a1:active {
     color: #91C8E4;
     background-color: transparent;
     text-decoration: underline;
+}
+
+
+
+/* Link for main content */
+
+.a2:link {
+    color: #041f33;
+    background-color: transparent;
+    text-decoration: none;
+}
+.a2:visited {
+    color: #041f33;
+    background-color: transparent;
+    text-decoration: none;
+}
+.a2:hover {
+    color: #91C8E4;
+    background-color: transparent;
+    text-decoration: underline;
+}
+.a2:active {
+    color: #91C8E4;
+    background-color: transparent;
+    text-decoration: underline;
+}
+
+.column_33 {
+    float: left;
+    width: 33%;
+    padding: 10px;
 }

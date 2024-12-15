@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<head>
+    <title>Стартовая страница</title>
+    <link rel="stylesheet" href="style.css">
+    <script type="text/javascript" id="MathJax-script" async
+        src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js">
+    </script>
+    <script>
+        MathJax = {
+            tex: {
+                inlineMath: [['$', '$']]
+            }
+        };
+    </script> 
+</head>
+<body>
+    <div class="header">ОГЭ</div>
+    <div class="row">
+        <div class="table_of_content">
+          <h2>Разделы</h2>
+          <p><a class="a1" href="oge_phys_formulas.html">Формулы</a></p>
+          <p><a class="a1" href="oge.html">← Назад ←</a></p>
+        </div>
+        <div class="main_content">
+            <h1>Формулы</h1>
+            <div class="row">
+                <div class="column_33">
+                    <h2>Механика</h2>
+                    <h3>Кинематика</h3>
+                    \begin{align}
+                        S &= v t\\
+                        S &= v_0t + \frac{at^2}{2}
+                    \end{align}
+                    <h3>Динамика</h3>
+                    \begin{align}
+                        &F = ma\\
+                        &F_{12} = -F_{21}\\
+                        &F_{\text{тяж}} = mg\\
+                        &F_{\text{грав}} = G\frac{m_1 m_2}{R^2}\\
+                        &F_{\text{упр}} = k\Delta x
+                    \end{align}
+                    <h3>Энергия и работа</h3>
+                    \begin{align}
+                        &A = F \cdot S\\
+                        &E_{\text{к}} = \frac{mv^2}{2}\\
+                        &E_{\text{п}} = mgh\\
+                        &P = \frac{A}{t}\\
+                        &\eta = \frac{A_{\text{п}}}{A_{\text{с}}} \cdot 100 \%
+                    \end{align}
+                </div>
+                <div class="column_33">
+                    <h2>Термодинамика</h2>
+                    \[
+                        Q_{\text{нагр}} = cm(t_2 - t_1)
+                    \]
+
+                </div>
+                <div class="column_33">
+                    <h2>Электромагнетизм</h2>
+                    \[
+                        F_{\text{Кул}} = k\frac{q_1\cdot q_2}{R^2}
+                    \]
+                    \[
+                        U = IR
+                    \]
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="footer">
+        <div>
+            Яцулевич Владимир, 2024
+        </div>
+    </div>
+</body>
