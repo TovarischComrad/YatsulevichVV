@@ -3,14 +3,18 @@
 }
 
 html, body {
-    margin: 0;
+    /* margin: 0;
     padding: 0;
     height: 100%;
-    width: 100%;
+    width: 100%; */
     font-size: 18px;
-    background: #749BC2;
     font-family: Verdana, sans-serif;
-    color: #08334b;
+    background: rgb(230, 230, 230);
+    /* color: #08334b; */
+}
+
+h2 {
+    text-align: center;
 }
 
 .header_in {
@@ -47,34 +51,56 @@ html, body {
 /* Structure of page */
 
 .header {
-    padding: 25px;
-    min-height: 100px;
+    width: 1000px;
+    margin: auto;
+    margin-top: 25px;
+    margin-bottom: 25px;
     text-align: center;
     background: #91C8E4;
     font-size: 30px;
     color: #EEEEEE;
+    border: black solid 1px;
+    min-height: 100px;
 }
 
 .table_of_content {
+    /* position: sticky; */
+    /* top: 150px; */
     min-height: 800px;
     float: left;
     width: 15%;
     padding: 25px;
-    background: #749BC2;
-    color: #EEEEEE;
+    background: #91C8E4;
+    /* background: #749BC2; */
+    /* color: #EEEEEE; */
+    margin-right: 2%;
+    border: black 1px solid;
+    font-size: 14px;
 }
 
 .main_content {
     min-height: 800px;
+    /* margin-left: 20%; */
     float: left;
     float: bottom;
-    width: 85%;
+    width: 83%;
+    font-size: 14px;
     padding: 25px;
-    background: #F6F4EB;
+    /* background: #F6F4EB; */
+    background: white;
+    border: black 1px solid;
+}
+
+#main_body {
+    width: 1000px;
+    margin: auto;
+    /* margin-left: 300px;
+    margin-right: 300px; */
 }
 
 .row:after {
     /* min-height: 800px; */
+
     bottom: 0;
     content: "";
     display: table;
@@ -82,17 +108,26 @@ html, body {
 }
 
 .footer {
+    width: 1000px;
+    margin: auto;
+    margin-top: 25px;
+    margin-bottom: 25px;
+    /* margin-left: 300px;
+    margin-right: 300px;
+    margin-top: 32px;
+    margin-bottom: 25px; */
     padding: 30px;
     text-align: right;
-    background: #4682A9;
-    font-size: 20px;
-    width: 100%;
-    color: white;
+    /* background: #4682A9; */
+    background: #91C8E4;
+    font-size: 16px;
+    /* color: white; */
+    border: black solid 1px;
 }
 
 /* Link for table of content */
 
-.a1:link {
+/* .a1:link {
     color: #EEEEEE;
     background-color: transparent;
     text-decoration: none;
@@ -111,7 +146,7 @@ html, body {
     color: #91C8E4;
     background-color: transparent;
     text-decoration: underline;
-}
+} */
 
 
 
@@ -141,5 +176,6 @@ html, body {
 .column_33 {
     float: left;
     width: 33%;
-    padding: 10px;
+    text-align: center;
+    /* padding: 10px; */
 }
