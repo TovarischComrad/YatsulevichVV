@@ -66,7 +66,8 @@ h2 {
 .table_of_content {
     /* position: sticky; */
     /* top: 150px; */
-    min-height: 800px;
+    /* min-height: 800px; */
+    min-height: 200px;
     float: left;
     width: 15%;
     padding: 25px;
@@ -76,11 +77,18 @@ h2 {
     margin-right: 2%;
     border: black 1px solid;
     font-size: 14px;
+
+    /* overflow: auto; */
+    position: -webkit-sticky;
+    position: sticky;
+    top: 5%;
 }
 
 .main_content {
-    min-height: 800px;
+    /* min-height: 800px; */
+    /* height: 200vh; */
     /* margin-left: 20%; */
+    min-height: 600px;
     float: left;
     float: bottom;
     width: 83%;
@@ -89,11 +97,13 @@ h2 {
     /* background: #F6F4EB; */
     background: white;
     border: black 1px solid;
+    /* display: flex; */
 }
 
 #main_body {
     width: 1000px;
     margin: auto;
+    /* display: flex; */
     /* margin-left: 300px;
     margin-right: 300px; */
 }
