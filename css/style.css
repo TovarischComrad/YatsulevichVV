@@ -1,5 +1,6 @@
 * {
     box-sizing: border-box;
+    
 }
 
 html, body {
@@ -8,8 +9,8 @@ html, body {
     height: 100%;
     width: 100%; */
     font-size: 18px;
-    font-family: Verdana, sans-serif;
-    background: rgb(230, 230, 230);
+    font-family: 'Inter', Helvetica, Arial, sans-serif;
+    background-color: #FFFFF2;
     /* color: #08334b; */
 }
 
@@ -51,7 +52,7 @@ h2 {
 /* Structure of page */
 
 .header {
-    width: 1000px;
+    max-width: 1000px;
     margin: auto;
     margin-top: 25px;
     margin-bottom: 25px;
@@ -64,53 +65,45 @@ h2 {
 }
 
 .table_of_content {
-    /* position: sticky; */
-    /* top: 150px; */
-    /* min-height: 800px; */
     min-height: 200px;
     float: left;
-    width: 15%;
+    width: 150px;
     padding: 25px;
     background: #91C8E4;
-    /* background: #749BC2; */
-    /* color: #EEEEEE; */
     margin-right: 2%;
     border: black 1px solid;
     font-size: 14px;
-
-    /* overflow: auto; */
     position: -webkit-sticky;
     position: sticky;
     top: 5%;
 }
 
 .main_content {
-    /* min-height: 800px; */
-    /* height: 200vh; */
-    /* margin-left: 20%; */
     min-height: 600px;
     float: left;
     float: bottom;
     width: 83%;
     font-size: 14px;
     padding: 25px;
-    /* background: #F6F4EB; */
     background: white;
     border: black 1px solid;
-    /* display: flex; */
+    position: relative;
 }
 
 #main_body {
-    width: 1000px;
+    max-width: 1000px;
     margin: auto;
+
+    display: flex;
+    flex: 1;
+
     /* display: flex; */
     /* margin-left: 300px;
     margin-right: 300px; */
 }
 
-.row:after {
-    /* min-height: 800px; */
 
+.row:after {
     bottom: 0;
     content: "";
     display: table;
@@ -118,7 +111,7 @@ h2 {
 }
 
 .footer {
-    width: 1000px;
+    max-width: 1000px;
     margin: auto;
     margin-top: 25px;
     margin-bottom: 25px;
