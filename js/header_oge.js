@@ -8,10 +8,10 @@ class Header extends HTMLElement {
             <div class="header">
                 <div class="row">
                     <div class="column_33">
-                        <h1><a class="a1" href="index.html">Конспектики.ру</h1>
+                        <h1><a href="../../../index.html">Конспектики.ру</a></h1>
                     </div>
                     <div class="column_33">
-                       
+                        <h1><a href="../oge.html">ОГЭ</a></h1>
                     </div>
                     <div class="column_33">
                         
