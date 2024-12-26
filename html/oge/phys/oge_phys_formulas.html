@@ -1,8 +1,9 @@
 <!DOCTYPE html>
 <head>
     <title>Стартовая страница</title>
-    <link rel="stylesheet" href="../../../css/style.css">
-    <link rel="stylesheet" href="../../../css/jupiter.css">
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet" href="/css/jupiter.css">
     <script type="text/javascript" id="MathJax-script" async
         src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js">
     </script>
@@ -13,16 +14,16 @@
             }
         };
     </script> 
-    <script src="../../../js/tc_phys_oge.js"></script>
+    <script src="/js/tc_phys_oge.js"></script>
+    <script src="/js/header.js" type="text/javascript" defer></script>
+    <script src="/js/footer.js" type="text/javascript" defer></script>
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
 </head>
 <body>
-    <div class="header">
-        <p>ОГЭ</p>
-    </div>
+    <header-component></header-component>
     <div class="row"  id="main_body">
         <div class="table_of_content" id="tc_phys">
           <h2>Разделы</h2>
@@ -74,9 +75,5 @@
             </div>
         </div>
     </div>
-    <div class="footer">
-        <div>
-            Яцулевич Владимир, 2024
-        </div>
-    </div>
+    <footer-component></footer-component>
 </body>
