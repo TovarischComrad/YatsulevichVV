@@ -6,20 +6,11 @@ class Header extends HTMLElement {
     connectedCallback() {
         this.innerHTML = `
             <div class="header">
-                <div class="row">
-                    <div class="column_33">
-                        <h1><a class="a1" href="index.html">Конспектики.ру</h1>
-                    </div>
-                    <div class="column_33">
-                       
-                    </div>
-                    <div class="column_33">
-                        
-                    </div>
-                </div>
+                <h1>Конспектики.ру</h1>
+
             </div>
       `;
     }
-  }
+}
   
-  customElements.define('header-component', Header);
+customElements.define('header-component', Header);
