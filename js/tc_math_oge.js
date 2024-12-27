@@ -1,19 +1,30 @@
-window.onload = function() {
-
-    function make_table_of_content(){
-
+class TableOfContent extends HTMLElement {
+    constructor() {
+      super();
+    }
+  
+    connectedCallback() {
         var html = ["oge_math_21_a.html"];
         var name = ["Задание 21"];
 
-        const tc = document.getElementById('tc_math');
-        var left = "<p><a class=\"a1\" href=\"";
+        var s = `
+            <div class="table_of_content">
+                <h2>Разделы</h2>
+                <nav class="nav-links">
+        `;
+        var left = "<a href=\"";
         var center = "\">";
-        var right = "</a></p>";
+        var right = "</a>";
         
         for (var i = 0; i < html.length; i++) {
-            tc.innerHTML += left + html[i] + center + name[i] + right;
+            s += left + html[i] + center + name[i] + right;
         }
-    };
-
-    make_table_of_content();
+        s += `
+                </nav>
+            </div>
+        `
+        this.innerHTML = s;
+    }
 }
+  
+customElements.define('table-of-content', TableOfContent);

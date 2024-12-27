@@ -5,11 +5,10 @@ class Footer extends HTMLElement {
   
     connectedCallback() {
         this.innerHTML = `
-            <div class="footer">
-                <div>
-                    Яцулевич Владимир, 2024
-                </div>
-            </div>
+            <footer class="footer">
+                <div>© Яцулевич Владимир, 2024.</div>
+                <div>Разработчики сайта</div>
+            </footer>
       `;
     }
   }

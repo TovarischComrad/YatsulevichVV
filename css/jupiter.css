@@ -2729,10 +2729,10 @@ button.jp-ToolbarButtonComponent .jp-ToolbarButtonComponent-label {
 
 /* Sibling imports */
 
-body {
+/* body {
   color: var(--jp-ui-font-color1);
   font-size: var(--jp-ui-font-size1);
-}
+} */
 
 /* Disable native link decoration styles everywhere outside of dialog boxes */
 a {
