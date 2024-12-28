@@ -12,7 +12,7 @@ html, body {
 
 
 
-@media only screen and (min-width: 650px) {
+@media only screen and (min-width: 200px) {
      
     body {
         display: flex; /* Добавить */
@@ -207,7 +207,7 @@ html, body {
     }
 }
 
-@media only screen and (max-width: 650px) {
+@media only screen and (max-width: 200px) {
 
     body {
         display: flex; /* Добавить */
