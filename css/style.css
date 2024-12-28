@@ -1,16 +1,39 @@
+:root {
+    --custom-black: #222222;
+    --custom-blue: #91C8E4;
+    --custom-white: #FFFFFF;
+    --custom-background: #FFFFF2; 
+
+    --width-main: 1200px;
+}
+
 * {
     box-sizing: border-box; 
 }
 
 html, body {
     font-family: 'Inter', Helvetica, Arial, sans-serif;
-    background-color: #FFFFF2;
+    background-color: var(--custom-background);
     height: 100%; /* Добавить */
     margin: 0; /* Добавить */
     padding: 0; /* Добавить */
 }
 
+    
+.nav-links {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
 
+.nav-links a {
+    color: var(--custom-black);
+    text-decoration: none;
+}
+
+.nav-links a:hover {
+    text-decoration: underline;
+}
 
 @media only screen and (min-width: 650px) {
      
@@ -58,14 +81,14 @@ html, body {
     /* Structure of page */
     
     .header {
-        max-width: 1200px;
+        max-width: var(--width-main);
         margin: auto;
         margin-bottom: 1rem;
         margin-top: 1rem;
         padding: 1rem;
         text-align: left;
-        background: #91C8E4;
-        border: black solid 1px;
+        background: var(--custom-blue);
+        border: var(--custom-black) solid 1px;
         min-height: 100px;
         display: flex;
         justify-content: space-between;
@@ -74,6 +97,10 @@ html, body {
     
     .contact-info {
         text-align: right;
+    }
+
+    .content-button {
+        display: none;
     }
     
     .header h1 {
@@ -88,10 +115,10 @@ html, body {
         width: 150px;
         height: 100%; /* Высота будет определяться контентом */
         max-height: 80vh; /* Максимальная высота 80% от высоты экрана */
-        background: #91C8E4;
+        background: var(--custom-blue);
         margin-right: 1rem;
         padding: 1rem;
-        border: black 1px solid;
+        border: var(--custom-black) 1px solid;
         position: sticky; /* Позиционирование */
         top: 1rem; /* Отступ от верха при прилипании */
         float: left;
@@ -108,8 +135,8 @@ html, body {
         float: left;
         width: calc(100% - 150px - 1rem);
         padding: 1rem;
-        background: white;
-        border: black 1px solid;
+        background: var(--custom-white);
+        border: var(--custom-black) 1px solid;
         position: relative;
         overflow-y: auto; /* Добавить при необходимости прокрутки контента */
     }
@@ -120,7 +147,7 @@ html, body {
     }
     
     #main_body {
-        max-width: 1200px;
+        max-width: var(--width-main);
         margin: auto;
         
         flex: 1; /* Добавить */
@@ -138,36 +165,23 @@ html, body {
     }
     
     .footer {
-        max-width: 1200px;
+        max-width: var(--width-main);
         margin: auto;
         margin-top: 1rem;
         margin-bottom: 1rem;
         text-align: right;
-        background: #91C8E4;
-        border: black solid 1px;
+        background: var(--custom-blue);
+        border: var(--custom-black) solid 1px;
         padding: 1rem;
         display: flex;
         justify-content: space-between;
         align-items: center;
     }
-    
-    .nav-links {
-        display: flex;
-        flex-direction: column;
-        gap: 0.5rem;
-    }
-    
-    .nav-links a {
-        color: black;
-        text-decoration: none;
-    }
-    
-    .nav-links a:hover {
-        text-decoration: underline;
-    }
+
+
     
     .a_black {
-        color: black;
+        color: var(--custom-black);
         text-decoration: none;
     }
     
@@ -179,22 +193,22 @@ html, body {
     /* Link for main content */
     
     .a2:link {
-        color: black;
+        color: var(--custom-black);
         background-color: transparent;
         text-decoration: none;
     }
     .a2:visited {
-        color: black;
+        color: var(--custom-black);
         background-color: transparent;
         text-decoration: none;
     }
     .a2:hover {
-        color: black;
+        color: var(--custom-black);
         background-color: transparent;
         text-decoration: none;
     }
     .a2:active {
-        color: black;
+        color: var(--custom-black);
         background-color: transparent;
         text-decoration: none;
     }
@@ -204,6 +218,10 @@ html, body {
         float: left;
         width: 33%;
         /* text-align: center; */
+    }
+
+    .tc_mobile {
+        display: none;
     }
 }
 
@@ -218,9 +236,9 @@ html, body {
     .header {
         /* max-width: 450px; */
         padding: 1rem;
-        text-align: left;
-        background: #91C8E4;
-        border: black solid 1px;
+        text-align: right;
+        background: var(--custom-blue);
+        border: var(--custom-black) solid 1px;
         min-height: 100px;
         display: flex;
         justify-content: space-between;
@@ -231,15 +249,27 @@ html, body {
         display: none;
     }
 
+    .content-button {
+        border: var(--custom-black) solid 1px;
+    }
+
     .footer {
         /* max-width: 450px; */
         text-align: right;
-        background: #91C8E4;
-        border: black solid 1px;
+        background: var(--custom-blue);
+        border: var(--custom-black) solid 1px;
         padding: 1rem;
         display: flex;
         justify-content: space-between;
         align-items: center;
+    }
+
+    .author {
+        margin: auto;
+    }
+
+    .privacy {
+        display: none;
     }
 
     #main_body {
@@ -254,14 +284,33 @@ html, body {
         display: none;
     }
 
+    .tc_mobile {
+        display: none;
+
+        position: absolute;
+        height: 100%;
+        min-width: 100px;
+        background-color: var(--custom-blue);
+        border: var(--custom-black) solid 1px;
+        z-index: 100;
+    }
+
     .main_content {
         height: auto; /* Заменить min-height */
         float: left;
         /* width: calc(100% - 150px - 1rem); */
         padding: 1rem;
-        background: white;
-        border: black 1px solid;
+        background: var(--custom-white);
+        border: var(--custom-black) 1px solid;
         position: relative;
         overflow-y: auto; /* Добавить при необходимости прокрутки контента */
+    }
+
+    .header h1 {
+        font-family: Times New Roman, serif;
+        font-size: 2.5rem;
+        /* margin-top: 1rem;
+        margin-bottom: 1rem; */
+        text-align: right;
     }
 }
