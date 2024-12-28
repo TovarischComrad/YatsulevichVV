@@ -35,6 +35,40 @@ html, body {
     text-decoration: underline;
 }
 
+    
+.a_black {
+    color: var(--custom-black);
+    text-decoration: none;
+}
+
+.a_black:hover {
+    text-decoration: underline;
+}
+
+
+/* Link for main content */
+
+.a2:link {
+    color: var(--custom-black);
+    background-color: transparent;
+    text-decoration: none;
+}
+.a2:visited {
+    color: var(--custom-black);
+    background-color: transparent;
+    text-decoration: none;
+}
+.a2:hover {
+    color: var(--custom-black);
+    background-color: transparent;
+    text-decoration: none;
+}
+.a2:active {
+    color: var(--custom-black);
+    background-color: transparent;
+    text-decoration: none;
+}
+
 @media only screen and (min-width: 650px) {
      
     body {
@@ -179,39 +213,7 @@ html, body {
     }
 
 
-    
-    .a_black {
-        color: var(--custom-black);
-        text-decoration: none;
-    }
-    
-    .a_black:hover {
-        text-decoration: underline;
-    }
-    
-    
-    /* Link for main content */
-    
-    .a2:link {
-        color: var(--custom-black);
-        background-color: transparent;
-        text-decoration: none;
-    }
-    .a2:visited {
-        color: var(--custom-black);
-        background-color: transparent;
-        text-decoration: none;
-    }
-    .a2:hover {
-        color: var(--custom-black);
-        background-color: transparent;
-        text-decoration: none;
-    }
-    .a2:active {
-        color: var(--custom-black);
-        background-color: transparent;
-        text-decoration: none;
-    }
+
     
     .column_33 {
         margin: auto;
@@ -231,6 +233,7 @@ html, body {
         display: flex; /* Добавить */
         flex-direction: column; /* Добавить */
         min-height: 100vh; /* Добавить */
+        padding: 1px;
     }
 
     .header {
@@ -298,7 +301,7 @@ html, body {
     .main_content {
         height: auto; /* Заменить min-height */
         float: left;
-        /* width: calc(100% - 150px - 1rem); */
+        width: 100%;
         padding: 1rem;
         background: var(--custom-white);
         border: var(--custom-black) 1px solid;
