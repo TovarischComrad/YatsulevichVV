@@ -6,7 +6,7 @@ class Header extends HTMLElement {
     connectedCallback() {
         this.innerHTML = `
             <header class="header">
-                <button class="content-button" onclick="TableOfContent()">ТЫК</button>
+                <div class="content-button" onclick="TableOfContentOpen()"><img src="/YatsulevichVV/source/image/Vector.svg" width="100%" height="100%"></div>
                 <h1><a class="a2" href="/YatsulevichVV/index.html">Конспектики.ру</a></h1>
                 <div class="contact-info">
                     <div>Email: yatsulevichvv@outlook.com</div>

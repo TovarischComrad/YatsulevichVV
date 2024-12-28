@@ -20,14 +20,18 @@
     <script src="/YatsulevichVV/js/tc_phys_oge.js"></script>
     <script src="/YatsulevichVV/js/header.js" type="text/javascript" defer></script>
     <script src="/YatsulevichVV/js/footer.js" type="text/javascript" defer></script>
+    <script src="/YatsulevichVV/js/mobile.js" type="text/javascript" defer></script>
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
 </head>
 <body>
+
+    <table-of-content class="tc_mobile"></table-of-content>
+
     <header-component></header-component>
-    <div class="row"  id="main_body">
+    <div class="row" id="main_body" onclick="TableOfContentClose()">
         <table-of-content></table-of-content>
         <div class="main_content">
             <h1>Формулы</h1>

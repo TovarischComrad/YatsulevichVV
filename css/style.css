@@ -69,6 +69,36 @@ html, body {
     text-decoration: none;
 }
 
+
+.sentence {
+    /* text-indent: 25px; */
+    text-align: justify;
+}
+
+.image {
+    margin: 20px;
+    margin-left: 200px;
+    margin-right: 200px;
+}
+
+.image img{
+    margin: auto;
+    display: block;
+}
+
+.problem {
+    text-indent: 25px;
+    padding: 10px;
+    margin: 20px;
+    margin-left: 100px;
+    margin-right: 100px;
+    border-radius: 10px;
+    text-align: justify;
+    align-self: center;
+    background-color: rgb(205, 205, 205);
+}
+
+
 @media only screen and (min-width: 650px) {
      
     body {
@@ -84,33 +114,7 @@ html, body {
         margin: 50px;
     }
     
-    .sentence {
-        /* text-indent: 25px; */
-        text-align: justify;
-    }
     
-    .image {
-        margin: 20px;
-        margin-left: 200px;
-        margin-right: 200px;
-    }
-    
-    .image img{
-        margin: auto;
-        display: block;
-    }
-    
-    .problem {
-        text-indent: 25px;
-        padding: 10px;
-        margin: 20px;
-        margin-left: 100px;
-        margin-right: 100px;
-        border-radius: 10px;
-        text-align: justify;
-        align-self: center;
-        background-color: rgb(205, 205, 205);
-    }
     
     /* Structure of page */
     
@@ -211,9 +215,6 @@ html, body {
         justify-content: space-between;
         align-items: center;
     }
-
-
-
     
     .column_33 {
         margin: auto;
@@ -242,18 +243,19 @@ html, body {
         text-align: right;
         background: var(--custom-blue);
         border: var(--custom-black) solid 1px;
-        min-height: 100px;
         display: flex;
         justify-content: space-between;
         align-items: center;
+        height: 44px;
     }
 
     .contact-info {
         display: none;
     }
 
-    .content-button {
-        border: var(--custom-black) solid 1px;
+    .content-button  {
+        /* border: var(--custom-black) solid 1px; */
+        cursor: pointer;
     }
 
     .footer {
@@ -290,12 +292,20 @@ html, body {
     .tc_mobile {
         display: none;
 
-        position: absolute;
-        height: 100%;
-        min-width: 100px;
+        position: fixed; /* Изменить с absolute на fixed */
+        top: 0; /* Добавить */
+        left: 0; /* Добавить */
+        height: 100vh; /* Изменить со 100% на 100vh */
+
+        /* position: absolute; */
+        /* height: 100%; */
+        /* min-width: 100px; */
         background-color: var(--custom-blue);
         border: var(--custom-black) solid 1px;
         z-index: 100;
+        min-width: 50%;
+        padding-left: 1rem;
+        padding-right: 1rem;
     }
 
     .main_content {
@@ -311,7 +321,7 @@ html, body {
 
     .header h1 {
         font-family: Times New Roman, serif;
-        font-size: 2.5rem;
+        font-size: 2rem;
         /* margin-top: 1rem;
         margin-bottom: 1rem; */
         text-align: right;
