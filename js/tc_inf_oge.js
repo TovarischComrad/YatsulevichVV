@@ -28,3 +28,29 @@ class TableOfContent extends HTMLElement {
 }
   
 customElements.define('table-of-content', TableOfContent);
+
+
+function tc_hide() {
+    console.log("Я тут");
+    if (screen.width <= 650) {
+        document.getElementsByClassName("table_of_content")[0].style.display = "block";
+    }
+}
+
+window.addEventListener('resize', () => {
+    if (window.innerWidth <= 650) {
+        document.getElementsByClassName("table_of_content")[0].style.display = "block";
+    }
+    else {
+        document.getElementsByClassName("table_of_content")[0].style.display = "none";
+    }
+})
+
+window.addEventListener('load', () => {
+    if (window.innerWidth <= 650) {
+        document.getElementsByClassName("table_of_content")[0].style.display = "block";
+    }
+    else {
+        document.getElementsByClassName("table_of_content")[0].style.display = "none";
+    }
+})
