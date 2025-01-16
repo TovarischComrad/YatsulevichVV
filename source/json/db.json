@@ -1,0 +1,21 @@
+{
+    "db": {
+        "inf": {
+            "python_first.html": "Введение в Python",
+            "#": "Продвинутый Python"
+        },
+        "math": {
+            "oge_math_21_a.html": "Задание 21",
+            "#": "Задание 15"
+        },
+        "phys": {
+            "oge_phys_formulas.html": "Формулы",
+            "#": "Механика"
+        }
+    },
+    "types": {
+        "python_first.html": "inf",
+        "oge_math_21_a.html": "math",
+        "oge_phys_formulas.html": "phys"
+    }
+}
