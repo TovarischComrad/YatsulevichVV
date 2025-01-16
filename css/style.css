@@ -71,27 +71,24 @@ html, body {
 
 
 .sentence {
-    /* text-indent: 25px; */
     text-align: justify;
 }
 
 .image {
-    margin: 20px;
-    margin-left: 200px;
-    margin-right: 200px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
 }
 
-.image img{
-    margin: auto;
-    display: block;
-}
 
 .problem {
     text-indent: 25px;
     padding: 10px;
-    margin: 20px;
-    margin-left: 100px;
-    margin-right: 100px;
+    margin-top: 20px;
+    margin-bottom: 20px;
     border-radius: 10px;
     text-align: justify;
     align-self: center;
@@ -114,7 +111,10 @@ html, body {
         margin: 50px;
     }
     
-    
+    image img {
+        width: 40%;
+        max-width: 75%; /* Уменьшение максимальной ширины изображения */
+    }
     
     /* Structure of page */
     
@@ -234,7 +234,7 @@ html, body {
         display: flex; /* Добавить */
         flex-direction: column; /* Добавить */
         min-height: 100vh; /* Добавить */
-        padding: 1px;
+        /* padding: 1px; */
     }
 
     .header {
@@ -269,6 +269,11 @@ html, body {
         align-items: center;
     }
 
+    .image img{
+        width: 80%;
+        max-width: 100%;
+    }
+
     .author {
         margin: auto;
     }
@@ -290,11 +295,11 @@ html, body {
     }
 
     .tc_mobile {
-        display: none;
+        display: block;
 
         position: fixed; /* Изменить с absolute на fixed */
         top: 0; /* Добавить */
-        left: 0; /* Добавить */
+        left: -100%; /* Добавить */
         height: 100vh; /* Изменить со 100% на 100vh */
 
         /* position: absolute; */
@@ -306,6 +311,12 @@ html, body {
         min-width: 50%;
         padding-left: 1rem;
         padding-right: 1rem;
+
+        transition: left 0.4s;
+    }
+
+    .tc_mobile.active {
+        left: 0;
     }
 
     .main_content {
@@ -314,7 +325,9 @@ html, body {
         width: 100%;
         padding: 1rem;
         background: var(--custom-white);
-        border: var(--custom-black) 1px solid;
+        border-left: var(--custom-black) 1px solid;
+        border-right: var(--custom-black) 1px solid;
+        /* border: var(--custom-black) 1px solid; */
         position: relative;
         overflow-y: auto; /* Добавить при необходимости прокрутки контента */
     }
