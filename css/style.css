@@ -111,10 +111,10 @@ html, body {
         margin: 50px;
     }
     
-    image img {
-        width: 40%;
-        max-width: 75%; /* Уменьшение максимальной ширины изображения */
-    }
+    /* image img {
+        max-width: 200px;
+        min-width: 300px;
+    } */
     
     /* Structure of page */
     
@@ -273,10 +273,10 @@ html, body {
         align-items: center;
     }
 
-    .image img{
+    /* .image img{
         width: 80%;
         max-width: 100%;
-    }
+    } */
 
     .author {
         margin: auto;

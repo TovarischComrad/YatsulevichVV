@@ -4,8 +4,6 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1.0, minimum-scale=1.0">
 
-    
-    <link rel="stylesheet" href="/YatsulevichVV/css/jupiter.css">
     <link rel="stylesheet" href="/YatsulevichVV/css/style.css">
     <script type="text/javascript" id="MathJax-script" async
         src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js">
@@ -25,6 +23,11 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/styles/stackoverflow-light.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/highlight.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/languages/go.min.js"></script>
+    <script>hljs.highlightAll();</script>
 </head>
 <body>
 
@@ -35,53 +38,16 @@
         <table-of-content class="tc_desktop"></table-of-content>
         <div class="main_content">
             <h2>Введение в Python</h2>
-            <div class="jp-Notebook" data-jp-theme-light="true" data-jp-theme-name="JupyterLab Light">
-                <div class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
-                <div class="jp-Cell-inputWrapper" tabindex="0">
-                <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
-                </div>
-                <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
-                </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
-                <p>Пример кодового блока. Объявление переменных</p>
-                </div>
-                </div>
-                </div>
-                </div><div class="jp-Cell jp-CodeCell jp-Notebook-cell">
-                <div class="jp-Cell-inputWrapper" tabindex="0">
-                <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
-                </div>
-                <div class="jp-InputArea jp-Cell-inputArea">
-                <div class="jp-InputPrompt jp-InputArea-prompt">In [1]:</div>
-                <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
-                <div class="cm-editor cm-s-jupyter">
-<div class="highlight hl-python"><pre><span></span><span class="n">x</span> <span class="o">=</span> <span class="nb">int</span><span class="p">(</span><span class="nb">input</span><span class="p">())</span>
-<span class="n">y</span> <span class="o">=</span> <span class="nb">int</span><span class="p">(</span><span class="nb">input</span><span class="p">())</span>
-<span class="n">z</span> <span class="o">=</span> <span class="n">x</span> <span class="o">+</span> <span class="n">y</span>
-<span class="nb">print</span><span class="p">(</span><span class="n">x</span> <span class="o">+</span> <span class="n">y</span><span class="p">)</span>
-</pre></div>
-                </div>
-                </div>
-                </div>
-                </div>
-                <div class="jp-Cell-outputWrapper">
-                <div class="jp-Collapser jp-OutputCollapser jp-Cell-outputCollapser">
-                </div>
-                <div class="jp-OutputArea jp-Cell-outputArea">
-                <div class="jp-OutputArea-child">
-                <div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
-                <div class="jp-RenderedText jp-OutputArea-output" data-mime-type="text/plain" tabindex="0">
-                <pre>
-1
-2
-3
-                </pre>
-                </div>
-                </div>
-                </div>
-                </div>
-                </div>
-                </div>
-        </div>
+
+            <pre><code class="python">def sum(x, y):
+    return x + y
+
+x = int(input())
+y = int(input())
+z = sum(x, y)
+print(z)</code></pre>
+
+        </div> 
     </div>
     <footer-component></footer-component>
 </body>

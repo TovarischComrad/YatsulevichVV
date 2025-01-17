@@ -42,3 +42,4 @@ class TableOfContent extends HTMLElement {
 }
   
 customElements.define('table-of-content', TableOfContent);
+
