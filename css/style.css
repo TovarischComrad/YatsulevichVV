@@ -226,6 +226,10 @@ html, body {
     .tc_mobile {
         display: none;
     }
+
+    .tc_desktop {
+        display: block;
+    }
 }
 
 @media only screen and (max-width: 650px) {
@@ -290,9 +294,9 @@ html, body {
         position: relative; /* Добавить */
     }
 
-    .table_of_content {
+    /* .table_of_content {
         display: none;
-    }
+    } */
 
     .tc_mobile {
         display: block;
@@ -317,6 +321,10 @@ html, body {
 
     .tc_mobile.active {
         left: 0;
+    }
+
+    .tc_desktop {
+        display: none;
     }
 
     .main_content {

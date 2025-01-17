@@ -15,6 +15,8 @@
             }
         };
     </script> 
+
+    <script src="/YatsulevichVV/js/dynamic_tc.js"></script>
     <script src="/YatsulevichVV/js/header.js" type="text/javascript" defer></script>
     <script src="/YatsulevichVV/js/footer.js" type="text/javascript" defer></script>
     <script src="/YatsulevichVV/js/mobile.js" type="text/javascript" defer></script>
@@ -26,30 +28,12 @@
 <body>
     
     <!-- Mobile version -->
-    <div class="tc_mobile">
-        <h2>Разделы</h2>
-            <nav class="nav-links">
-                <a href="/YatsulevichVV/html/oge/oge.html">ОГЭ</a>
-                <a href="#">ЕГЭ</a>
-                <a href="#">ОЛИМПИАДЫ</a>
-                <a href="#">ВЫСШАЯ МАТЕМАТИКА</a>
-                <a href="#">НАУКА И КНИГИ</a>
-            </nav>
-    </div>
+    <table-of-content class="tc_mobile"></table-of-content>
     
     <!-- Desktop version -->
     <header-component></header-component>
     <div class="row" id="main_body" onclick="TableOfContentClose()">
-        <div class="table_of_content">
-            <h2>Разделы</h2>
-            <nav class="nav-links">
-                <a href="oge.html">ОГЭ</a>
-                <a href="#">ЕГЭ</a>
-                <a href="#">ОЛИМПИАДЫ</a>
-                <a href="#">ВЫСШАЯ МАТЕМАТИКА</a>
-                <a href="#">НАУКА И КНИГИ</a>
-            </nav>
-        </div>
+        <table-of-content class="tc_desktop"></table-of-content>
         <div class="main_content">
             <div class="row">
                 <div class="column_33">

@@ -11,11 +11,21 @@
         "phys": {
             "oge_phys_formulas.html": "Формулы",
             "#": "Механика"
+        },
+        "sections": {
+            "/YatsulevichVV/html/oge/oge.html": "ОГЭ",
+            "#1": "ЕГЭ",
+            "#2": "ОЛИМПИАДЫ",
+            "#3": "ВЫСШАЯ МАТЕМАТИКА",
+            "#4": "НАУКА И КНИГИ"
         }
     },
     "types": {
         "python_first.html": "inf",
         "oge_math_21_a.html": "math",
-        "oge_phys_formulas.html": "phys"
+        "oge_phys_formulas.html": "phys",
+        "oge.html": "sections",
+        "index.html": "sections",
+        "privacy.html": "sections"
     }
 }

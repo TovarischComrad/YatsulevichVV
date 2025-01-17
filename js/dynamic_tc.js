@@ -9,7 +9,13 @@ class TableOfContent extends HTMLElement {
             .then((json) => {
         
                 var path = window.location.pathname;
-                var fileName = path.substring(path.lastIndexOf('/') + 1);
+                var fileName = "";
+                if (path == "/YatsulevichVV/") {
+                    fileName = "index.html";
+                }
+                else {
+                    fileName = path.substring(path.lastIndexOf('/') + 1);
+                }
                 var type = json['types'][fileName];
                 var html = Object.keys(json['db'][type]);
                 var name = Object.values(json['db'][type]);
@@ -36,21 +42,3 @@ class TableOfContent extends HTMLElement {
 }
   
 customElements.define('table-of-content', TableOfContent);
-
-window.addEventListener('resize', () => {
-    if (window.innerWidth <= 650) {
-        document.getElementsByClassName("table_of_content")[0].style.display = "block";
-    }
-    else {
-        document.getElementsByClassName("table_of_content")[0].style.display = "none";
-    }
-})
-
-window.addEventListener('load', () => {
-    if (window.innerWidth <= 650) {
-        document.getElementsByClassName("table_of_content")[0].style.display = "block";
-    }
-    else {
-        document.getElementsByClassName("table_of_content")[0].style.display = "none";
-    }
-})
