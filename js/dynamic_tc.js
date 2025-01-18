@@ -34,7 +34,8 @@ class TableOfContent extends HTMLElement {
                 }
                 s += `
                         </nav>
-                    </div>
+                        <div class="privacy_mobile"><a class="a_black" href="/YatsulevichVV/privacy.html">Разработчики сайта</a></div>
+                    </div>             
                 `
                 this.innerHTML = s;
             });

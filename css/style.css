@@ -96,6 +96,7 @@ html, body {
 }
 
 
+
 @media only screen and (min-width: 650px) {
      
     body {
@@ -215,6 +216,10 @@ html, body {
         justify-content: space-between;
         align-items: center;
     }
+
+    .privacy_mobile {
+        display: none;
+    }
     
     .column_33 {
         margin: auto;
@@ -271,6 +276,12 @@ html, body {
         display: flex;
         justify-content: space-between;
         align-items: center;
+    }
+
+    .privacy_mobile {
+        position: absolute;
+        bottom: 20px;
+        display: block;
     }
 
     /* .image img{
