@@ -16,8 +16,12 @@
             "/YatsulevichVV/html/oge/oge.html": "ОГЭ",
             "#1": "ЕГЭ",
             "#2": "ОЛИМПИАДЫ",
-            "#3": "ВЫСШАЯ МАТЕМАТИКА",
+            "/YatsulevichVV/html/high_math/high_math.html": "ВЫСШАЯ МАТЕМАТИКА",
             "#4": "НАУКА И КНИГИ"
+        },
+        "gmurman": {
+            "chapter1.html": "Глава 1",
+            "chapter15.html": "Глава 15"
         }
     },
     "types": {
@@ -26,6 +30,9 @@
         "oge_phys_formulas.html": "phys",
         "oge.html": "sections",
         "index.html": "sections",
-        "privacy.html": "sections"
+        "privacy.html": "sections",
+        "high_math.html": "sections",
+        "chapter1.html": "gmurman",
+        "chapter15.html": "gmurman"
     }
 }

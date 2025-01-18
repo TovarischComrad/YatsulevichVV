@@ -95,6 +95,9 @@ html, body {
     background-color: rgb(205, 205, 205);
 }
 
+img {
+    max-width: 100%;
+}
 
 
 @media only screen and (min-width: 650px) {
@@ -112,10 +115,7 @@ html, body {
         margin: 50px;
     }
     
-    /* image img {
-        max-width: 200px;
-        min-width: 300px;
-    } */
+
     
     /* Structure of page */
     
