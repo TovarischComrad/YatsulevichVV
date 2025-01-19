@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<head>
+    <title>Стартовая страница</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1.0, minimum-scale=1.0">
+
+    <link rel="stylesheet" href="/YatsulevichVV/css/style.css">
+ 
+    <script type="text/javascript" id="MathJax-script" async
+        src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js">
+    </script>
+    <script>
+        MathJax = {
+            tex: {
+                inlineMath: [['$', '$']]
+            }
+        };
+    </script> 
+    <script src="/YatsulevichVV/js/dynamic_tc.js"></script>
+    <script src="/YatsulevichVV/js/header.js" type="text/javascript" defer></script>
+    <script src="/YatsulevichVV/js/footer.js" type="text/javascript" defer></script>
+    <script src="/YatsulevichVV/js/mobile.js" type="text/javascript" defer></script>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <table-of-content class="tc_mobile"></table-of-content>
+
+    <header-component></header-component>
+    <div class="row" id="main_body" onclick="TableOfContentClose()">
+        <table-of-content class="tc_desktop"></table-of-content>
+        <div class="main_content">
+            <h1>Термодинамика</h1>
+            <h2>Введение</h2>
+            <p class="sentence">
+                <b>Термодинамика</b> - это раздел физики, изучающий различные тепловые явления. В 
+                основе термодинамики лежит <b>молекулярно-кинетическая теория</b> (<b>МКТ</b>). МКТ
+                состоит из нескольких положений.
+                <ol>
+                    <li>Вся материя состоит из частиц: атомы, молекулы, ионы</li>
+                    <li>Частицы находятся в непрерывном хаотическом движении (Броуновское движение)</li>
+                    <li>Частицы взаимодействуют друг с другом путём абсолютно упругих столкновений</li>
+                </ol>
+            </p>
+            <h2>Температура</h2>
+            <p class="sentence">
+                <b>Температура</b> - это физическая величина, характеризующая теплоту тела. Но что
+                из себя представляет тепло? Что такое горячо и что такое холодно? Исходя из МКТ мы 
+                знаем, что вся материя состоит из молекул, которые всё время двигаются. То есть все 
+                физические величины тел зависят от конфигурации молекул. А именно от
+                <ul>
+                    <li>Массы молекул</li>
+                    <li>Количества молекул</li>
+                    <li>Скорости молекул</li>
+                </ul>
+                Существует несколько шкал измерения температур. В основном на практике используется 
+                только три из них. А именно
+                <ul>
+                    <li>Шкала Цельция</li>
+                    <li>Шкала Кельвина</li>
+                    <li>Шкала Фаренгейта</li>
+                </ul>
+            </p>
+            <p class="sentence">
+                В шкале Цельсия $0^\circ \text{C}$ соответствует температуре замерзания воды при нормальных
+                условиях, а $100^\circ \text{C}$ соответствует температуре кипения воды. Таким образом, для 
+                определения температурной шкалы нужно задать нулевую отметку и шаг температуры.
+            </p>
+            <p class="sentence">
+                В шкале Кельвина температурный шаг соответствует температурному шагу шкалы Цельсия.
+                То есть разница температур льда на границе и пара на границе равна $100$ и в той, 
+                и в другой шкале.   
+            </p>
+            <div class="problem">
+                Согласно МКТ температура зависит от скорости движения молекул. Чем быстрее молекулы,
+                тем выше температура. Чем ниже скорость молекул, тем ниже температура.
+            </div>
+            <p class="sentence">
+                Исходя из этой закономерности можно сделать вывод, что существует макимальная и минимальная 
+                температуры. В шкале Кельвина $0 \text{K}$ соответствует полному отстутствию движению молекул.
+                Шкалы Цельсия и Кельвина связаны соотношением
+                \[
+                t_{\text{C}} = t_{\text{K}} - 273,15.
+                \]
+            </p>
+            <p class="sentence">
+                Ещё одна распространённая температурная шкала - шкала Фаренгейта, которая в основном 
+                распространена в США и некоторых других странах. В этой шкале температура таяния льда
+                равна $+32^{\circ}\text{F}$. Температура кипения воды $+212^{\circ}\text{F}$. Шкалы Цельсия и Фаренгейта связаны соотношением 
+                \[
+                t_{\text{C}} = \frac{5}{9}\cdot(t_{\text{F}} - 32).
+                \]
+            </p>
+        </div>
+    </div>
+    <footer-component></footer-component>
+</body>

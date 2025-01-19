@@ -10,6 +10,7 @@
         },
         "phys": {
             "oge_phys_formulas.html": "Формулы",
+            "termodynamic.html": "Термодинамика",
             "#": "Механика"
         },
         "sections": {
@@ -28,6 +29,7 @@
         "python_first.html": "inf",
         "oge_math_21_a.html": "math",
         "oge_phys_formulas.html": "phys",
+        "termodynamic.html": "phys",
         "oge.html": "sections",
         "index.html": "sections",
         "privacy.html": "sections",
