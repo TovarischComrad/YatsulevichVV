@@ -99,6 +99,11 @@ img {
     max-width: 100%;
 }
 
+#website_header {
+    font-weight: normal; 
+    font-size: 60px;
+}
+
 
 @media only screen and (min-width: 650px) {
      
@@ -135,7 +140,16 @@ img {
     }
     
     .contact-info {
-        text-align: right;
+        /* text-align: right; */
+        display: flex;
+    }
+
+    .link {
+        flex: 50%;
+        display: flex;
+        align-content: center;
+        flex-wrap: wrap;
+        margin-right: 20px;
     }
 
     .content-button {
