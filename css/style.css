@@ -16,6 +16,7 @@
 html, body {
     font-family: 'Inter', Helvetica, Arial, sans-serif;
     background-color: var(--custom-background);
+    color: var(--custom-black);
     height: 100%; /* Добавить */
     margin: 0; /* Добавить */
     padding: 0; /* Добавить */
@@ -118,6 +119,7 @@ html, body {
 img {
     max-width: 100%;
 }
+
 
 
 @media only screen and (min-width: 650px) {
@@ -263,6 +265,12 @@ img {
     .tc_desktop {
         display: block;
     }
+
+    #website_header {
+        font-weight: normal; 
+        font-size: 60px;
+    }
+    
 }
 
 @media only screen and (max-width: 650px) {
