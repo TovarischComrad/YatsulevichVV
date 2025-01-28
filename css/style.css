@@ -75,7 +75,7 @@ html, body {
 
 .sentence {
     text-align: justify;
-    display: inline;
+    /* display: inline; */
 }
 
 .image {
