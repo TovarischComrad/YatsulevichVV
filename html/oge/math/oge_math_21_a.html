@@ -1,29 +1,12 @@
 <!DOCTYPE html>
 <head>
-    <title>Стартовая страница</title>
     <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1.0, minimum-scale=1.0">
-
-    <link rel="stylesheet" href="/YatsulevichVV/css/style.css">
-    <script type="text/javascript" id="MathJax-script" async
-        src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js">
-    </script>
     <script>
-        MathJax = {
-            tex: {
-                inlineMath: [['$', '$']]
-            }
-        };
+        fetch('/YatsulevichVV/head.html')
+            .then(response => response.text())
+            .then(data => document.head.innerHTML += data);
     </script>
-
-    <script src="/YatsulevichVV/js/dynamic_tc.js"></script>
-    <script src="/YatsulevichVV/js/header.js" type="text/javascript" defer></script>
-    <script src="/YatsulevichVV/js/footer.js" type="text/javascript" defer></script>
-    <script src="/YatsulevichVV/js/mobile.js" type="text/javascript" defer></script>
-
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <script type="module" src="/YatsulevichVV/js/loader.js"></script>
 </head>
 <body>
 
