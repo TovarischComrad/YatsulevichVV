@@ -3,5 +3,3 @@ MathJax = {
         inlineMath: [['$', '$']]
     }
 };
-
-hljs.highlightAll();
