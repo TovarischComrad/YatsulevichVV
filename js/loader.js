@@ -1,5 +1,6 @@
 const scripts = [
     '/YatsulevichVV/js/other.js',
+    'https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js',
     '/YatsulevichVV/js/table_of_content.js',
     '/YatsulevichVV/js/header.js',
     '/YatsulevichVV/js/footer.js',
