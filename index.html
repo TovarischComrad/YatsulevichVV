@@ -1,15 +1,16 @@
 <!DOCTYPE html>
 <head>
     <meta charset="utf-8">
+    <link rel="stylesheet" href="/YatsulevichVV/css/style.css">
+    
     <script>
         fetch('/YatsulevichVV/head.html')
             .then(response => response.text())
             .then(data => document.head.innerHTML += data);
     </script>
-    <script type="module" src="/YatsulevichVV/js/loader.js"></script>
+    <script type="module" src="/YatsulevichVV/js/loader.js" defer></script>
 </head>
 <body>
-
     <!-- Mobile version -->
     <table-of-content class="tc_mobile"></table-of-content>
 
