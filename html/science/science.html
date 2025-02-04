@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<head>
+    <meta charset="utf-8">
+    <script>
+        fetch('/YatsulevichVV/head.html')
+            .then(response => response.text())
+            .then(data => document.head.innerHTML += data);
+    </script>
+    <script type="module" src="/YatsulevichVV/js/loader.js"></script>
+
+    
+</head>
+<body>
+    
+    <!-- Mobile version -->
+    <table-of-content class="tc_mobile"></table-of-content>
+    
+    <!-- Desktop version -->
+    <header-component></header-component>
+    <div class="row" id="main_body" onclick="TableOfContentClose()">
+        <table-of-content class="tc_desktop"></table-of-content>
+        <div class="main_content">
+            <h2>Современменные методы квантовых вычислений</h2>
+            <p><a class="a_black" href="modern_qc/modern_qc_lecture1.html">Лекция 1</a></p>
+        </div>
+    </div>
+    <footer-component></footer-component>
+</body>

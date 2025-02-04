@@ -18,11 +18,14 @@
             "#1": "ЕГЭ",
             "#2": "ОЛИМПИАДЫ",
             "/YatsulevichVV/html/high_math/high_math.html": "ВЫСШАЯ МАТЕМАТИКА",
-            "#4": "НАУКА И КНИГИ"
+            "/YatsulevichVV/html/science/science.html": "НАУКА И КНИГИ"
         },
         "gmurman": {
             "chapter1.html": "Глава 1",
             "chapter15.html": "Глава 15"
+        },
+        "modern_qc": {
+            "modern_qc_lecture1.html": "Лекция 1"
         }
     },
     "types": {
@@ -34,7 +37,9 @@
         "index.html": "sections",
         "privacy.html": "sections",
         "high_math.html": "sections",
+        "science.html": "sections",
         "chapter1.html": "gmurman",
-        "chapter15.html": "gmurman"
+        "chapter15.html": "gmurman",
+        "modern_qc_lecture1.html": "modern_qc"
     }
 }

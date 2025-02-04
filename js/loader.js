@@ -1,5 +1,5 @@
 const scripts = [
-    '/YatsulevichVV/js/other.js',
+    '/YatsulevichVV/js/latex.js',
     'https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js',
     '/YatsulevichVV/js/table_of_content.js',
     '/YatsulevichVV/js/header.js',
@@ -14,5 +14,10 @@ function loadScripts(scriptList) {
         document.head.appendChild(script);
     });
 }
+
+document.addEventListener("load", () => {
+    hljs.highlightAll();
+    console.log("I am here!");
+});
 
 loadScripts(scripts);
