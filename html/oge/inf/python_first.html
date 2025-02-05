@@ -7,13 +7,17 @@
             .then(response => response.text())
             .then(data => document.head.innerHTML += data);
     </script>
-    <script type="module" src="/YatsulevichVV/js/loader.js"></script>
-    
-    <!-- Не работает динамическая подгрузка -->
+
+    <script src="/YatsulevichVV/js/header.js"></script>
+    <script src="/YatsulevichVV/js/footer.js"></script>
+    <script src="/YatsulevichVV/js/table_of_content.js"></script>
+    <script src="/YatsulevichVV/js/mobile.js"></script>
+    <script src="/YatsulevichVV/js/latex.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+
     <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/highlight.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/languages/go.min.js"></script>
     <script>hljs.highlightAll();</script>
-   
 </head>
 <body>
 
