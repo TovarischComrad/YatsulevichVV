@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="/YatsulevichVV/css/style.css">
+    <script>
+        fetch('/YatsulevichVV/head.html')
+            .then(response => response.text())
+            .then(data => document.head.innerHTML += data);
+    </script>
+
+    <script src="/YatsulevichVV/js/header.js"></script>
+    <script src="/YatsulevichVV/js/footer.js"></script>
+    <script src="/YatsulevichVV/js/table_of_content.js"></script>
+    <script src="/YatsulevichVV/js/mobile.js"></script>
+    <script src="/YatsulevichVV/js/latex.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/highlight.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/languages/go.min.js"></script>
+    <script>hljs.highlightAll();</script>
+</head>
+<body>
+
+    <table-of-content class="tc_mobile"></table-of-content>
+
+    <header-component></header-component>
+    <div class="row" id="main_body" onclick="TableOfContentClose()">
+        <table-of-content class="tc_desktop"></table-of-content>
+        <div class="main_content">
+            <div class="abstract">
+                <h2>Задание 17</h2>
+    
+                <div class="sentence">
+                    Данная задача представляет из себя разработку переборного алгоритма. Задание часто формулируется следующим образом.
+                    </div>
+                    <div class="problem">
+                    Дан файл, содержащий целые числа. Необходимо в этом файле найти количество пар, которые бы удовлетворяли определённым условиям. Где под парой может подразумеваться либо два рядом стоящих элемента, либо различные два элемента.
+                    </div>
+                    <div class="sentence">
+                    Для начала, необходимо считать данные из файла и подготовить список для перебора чисел. Для этого разместим файл в корень проекта и напишем следующую команду:
+                    <pre><code class="python">file = open('file_name', 'r')
+</code></pre>
+                    Здесь функция <code>open()</code> принимает два аргумента: название файла и способ взаимодействия с файлом. Параметр <code>'r'</code> означает, что файл открывается только для чтения, параметр <code>'w'</code> означает, что файл открывается только для записи. Теперь в переменной <code>file</code> записана вся информация о файле. Чтобы извлечь непосредственно содержимое нужно к объекту <code>file</code> применить метод <code>read()</code>.
+                    <pre><code class="python">text = file.read()
+</code></pre>
+                    </div>
+                    <div class="sentence">
+                    На данном этапе все числа записаны в одну строку <code>text</code>. Поэтому их нужно разделить. Числа отделяет друг от друга символ переноса каретки на новую строку <code>'\n'</code>. Поэтому сформируем список чисел пока ещё в строковом формате. Для этого применим метод <code>split()</code> к строке <code>text</code>.
+                    <pre><code class="python">lst = text.split('\n')</code></pre>
+                    Также стоит отметить, что часто в файле имеется последняя пустая строка, которую нам учитывать не нужно. Поэтому добавим в нашу команду удаление последнего элемента.
+                    <pre><code class="python">lst = text.split('\n')[-1]
+</code></pre>
+                    </div>
+                    <div class="sentence">
+                    Последний шаг &mdash; это преобразование всех строковых элементов списка к числу. Для этого воспользуемся функцией <code>map()</code>.
+                    <pre><code class="python">lst = list(map(int, lst))
+</code></pre>
+                    </div>
+                    <div class="sentence">
+                    По итогу, считывание информации из файла можно описать следующим набором команд.
+                    <pre><code class="python">file = open('file_name', 'r')
+text = file.read()
+lst = text.split('\n')[-1]
+lst = list(map(int, lst))
+</code></pre>
+                    
+                    </div>
+                    
+            </div>
+
+            
+        </div> 
+    </div>
+    <footer-component></footer-component>
+</body>

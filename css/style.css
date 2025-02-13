@@ -167,10 +167,7 @@ h3 {
     padding: 10px;
     margin-top: 20px;
     margin-bottom: 20px;
-<<<<<<< HEAD
-    /* border-radius: 10px;  */
-=======
->>>>>>> E.V.2
+    /* border-radius: 10px; */
     text-align: justify;
     align-self: center;
     background-color: var(--custom-green);
@@ -184,6 +181,8 @@ img {
 
 .python {
     border: var(--custom-black) 1px solid;
+    margin-bottom: 20px;
+    margin-top: 20px;
 }
 
 @media only screen and (min-width: 650px) {

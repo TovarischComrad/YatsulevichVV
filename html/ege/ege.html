@@ -14,39 +14,34 @@
     <script src="/YatsulevichVV/js/mobile.js"></script>
     <script src="/YatsulevichVV/js/latex.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
-
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/highlight.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/languages/go.min.js"></script>
-    <script>hljs.highlightAll();</script>
 </head>
 <body>
-
+    
+    <!-- Mobile version -->
     <table-of-content class="tc_mobile"></table-of-content>
-
+    
+    <!-- Desktop version -->
     <header-component></header-component>
     <div class="row" id="main_body" onclick="TableOfContentClose()">
         <table-of-content class="tc_desktop"></table-of-content>
         <div class="main_content">
-            <div class="abstract">
-                <h2>Введение в Python</h2>
-    
-                <div class="sentence">
-                    <pre><code class="python">def sum(x, y):
-    return x + y
-
-x = int(input())
-y = int(input())
-z = sum(x, y)
-print(z)</code></pre>
-                </div>
-
-                <div class="sentence">
-                    Это пример текста, в котором будет блок кода. Кусок кода: <code>x = int(input())</code>. Конец кода
+            <div class="row">
+                <div class="sections">
+                    <div class="column_33">
+                        <h2>Математика</h2>
+                        <p><a class="a_black" href="#">Что-то</a></p>
+                    </div>
+                    <div class="column_33">
+                        <h2>Информатика</h2>
+                        <p><a class="a_black" href="inf/ege_inf_task17.html">Задание 17</a></p>
+                    </div>
+                    <div class="column_33">
+                        <h2>Физика</h2>
+                        <p><a class="a_black" href="#">Что-то</a></p>
+                    </div>
                 </div>
             </div>
-
-            
-        </div> 
+        </div>
     </div>
     <footer-component></footer-component>
 </body>

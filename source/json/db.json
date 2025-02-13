@@ -15,7 +15,7 @@
         },
         "sections": {
             "/YatsulevichVV/html/oge/oge.html": "ОГЭ",
-            "#1": "ЕГЭ",
+            "/YatsulevichVV/html/ege/ege.html": "ЕГЭ",
             "#2": "ОЛИМПИАДЫ",
             "/YatsulevichVV/html/high_math/high_math.html": "ВЫСШАЯ МАТЕМАТИКА",
             "/YatsulevichVV/html/science/science.html": "НАУКА И КНИГИ"
@@ -26,6 +26,9 @@
         },
         "modern_qc": {
             "modern_qc_lecture1.html": "Лекция 1"
+        },
+        "ege_inf": {
+            "ege_inf_task17.html": "Задание 17"
         }
     },
     "types": {
@@ -40,6 +43,8 @@
         "science.html": "sections",
         "chapter1.html": "gmurman",
         "chapter15.html": "gmurman",
-        "modern_qc_lecture1.html": "modern_qc"
+        "modern_qc_lecture1.html": "modern_qc",
+        "ege.html": "sections",
+        "ege_inf_task17.html": "ege_inf"
     }
 }
