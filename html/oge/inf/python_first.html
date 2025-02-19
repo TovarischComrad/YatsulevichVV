@@ -1,7 +1,9 @@
 <!DOCTYPE html>
 <head>
     <meta charset="utf-8">
-    <link rel="stylesheet" href="/YatsulevichVV/css/style.css">
+    <link rel="stylesheet" href="/YatsulevichVV/css/general.css">
+    <link rel="stylesheet" href="/YatsulevichVV/css/desktop.css">
+    <link rel="stylesheet" href="/YatsulevichVV/css/mobile.css">
     <script>
         fetch('/YatsulevichVV/head.html')
             .then(response => response.text())
@@ -28,24 +30,65 @@
         <table-of-content class="tc_desktop"></table-of-content>
         <div class="main_content">
             <div class="abstract">
-                <h2>Введение в Python</h2>
-    
-                <div class="sentence">
-                    <pre><code class="python">def sum(x, y):
-    return x + y
-
-x = int(input())
-y = int(input())
-z = sum(x, y)
-print(z)</code></pre>
-                </div>
-
-                <div class="sentence">
-                    Это пример текста, в котором будет блок кода. Кусок кода: <code>x = int(input())</code>. Конец кода
-                </div>
+                <h1>Язык программирования Python</h1>
+                <h2>Введение</h2><div class="sentence">
+                    Python &mdash; один из самых популярных языков программирования в настоящее время. Он используется практически везде: веб-разработка, геймдев, машинное обучение, научные исследования и много чего другого.
+                    </div>
+                    <div class="sentence">
+                    Начнём изучения с простой команды.
+                    <pre><code class="python">print('Hello world!')
+</code></pre>
+                    Данная команда выводит строку <code>Hello world!</code> на экран. Чуть позже опишем более детально, что означает каждый символ в данный команде.
+                    </div>
+                    <div class="sentence">
+                    Изучение программирования стоит начать с изучения двух фундаментальных понятий: переменная и функция. Что умеет делать компьютер? В основном компьютер умеет хранить информацию и её обрабатывать. Как раз для хранения информации используются переменные, а для обработки &mdash; функции. Представьте себе коробку, в которую вы положили какой-то предмет. А на этой коробке вы сделали отметку.
+                    </div>
+                    <div class="sentence">
+                    <div class="image">  
+                        <img src="/YatsulevichVV/source/image/python/path4-2.svg">  
+                    </div>
+                    </div>
+                    <div class="sentence">
+                    На языке программирования Python инициализация переменной делается следующим образом.
+                    <pre><code class="python">x = 5
+</code></pre>
+                    Здесь <code>x</code> &mdash; название переменной (то есть метка на нашей коробке), число <code>5</code> &mdash; это содержимое переменной, а символ <code>=</code> означает, что мы положили число <code>5</code> в переменную с названием <code>x</code>.
+                    </div>
+                    <div class="sentence">
+                    Теперь перейдём к рассмотрению функции. Функцию можно представить в виде торгового автомата. Автомат принимает на вход денежные купюры, а на выходе выдаёт тот товар, который вы выбрали. То есть автомат обрабатывает вашу информацию на входе, и выдаёт что-то на выходе.
+                    </div>
+                    <div class="sentence">
+                    <div class="image">
+                        
+                        <img src="/YatsulevichVV/source/image/python/function.svg">
+                        
+                    </div>
+                    </div>
+                    <div class="sentence">
+                    Для работы нам понадоятся две функции, позволяющие взаимодействовать с пользователем. У любой функции есть своё название и список аргументов (информация на входе). Так выглядит синтаксис обращения к функции.
+                    </div>
+                    <div class="sentence">
+                    <pre><code class="python">function_name(arguments)
+</code></pre>
+                    </div>
+                    <div class="sentence">
+                    Функция <code>print()</code> принимает на вход какую-то строку, а в качестве выходной информации выводит введённую строку на экран.
+                    </div>
+                    <div class="sentence">
+                    <pre><code class="python">x = 5
+print(5)
+</code></pre>
+                    </div>
+                    <div class="sentence">
+                    Функция <code>input()</code> не принимает на вход никакой информации. При её запуске пользователь сможет ввести что-то с клавиатуры. А в качестве результата работы функции выдаётся то, что ввёл пользователь.
+                    </div>
+                    <div class="sentence">
+                    <pre><code class="python">s = input()
+print(s)
+</code></pre>
+                    Здесь пользователь вводит что-то с клавиатуры. Этот ввод сохраняется в переменную <code>s</code>. А затем содержимое переменной <code>s</code> выводится на экран.
+                    </div>
             </div>
-
-            
         </div> 
     </div>
     <footer-component></footer-component>
