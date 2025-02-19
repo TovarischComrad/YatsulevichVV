@@ -49,6 +49,11 @@ class TableOfContent extends HTMLElement {
         nav_links.setAttribute("class", "nav-links");
         table_of_content.append(nav_links);
 
+        var privacy = document.createElement("div");
+        privacy.setAttribute("class", "privacy_mobile");
+        privacy.innerHTML = "<a class=\"a_black\" href=\"/YatsulevichVV/privacy.html\">Разработчики сайта</a>"
+        table_of_content.append(privacy);
+
         fetch('/YatsulevichVV/source/json/db.json')
             .then((response) => response.json())
             .then((json) => nav_list(json));
