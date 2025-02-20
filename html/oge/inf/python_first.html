@@ -37,6 +37,8 @@
                     <div class="sentence">
                     Начнём изучения с простой команды.
                     <pre><code class="python">print('Hello world!')
+
+Out[]: Hello world!
 </code></pre>
                     Данная команда выводит строку <code>Hello world!</code> на экран. Чуть позже опишем более детально, что означает каждый символ в данной команде.
                     </div>
@@ -44,14 +46,15 @@
                     Изучение программирования стоит начать с изучения двух фундаментальных понятий: переменная и функция. Что умеет делать компьютер? В основном компьютер умеет хранить информацию и её обрабатывать. Как раз для хранения информации используются переменные, а для обработки &mdash; функции. Представьте себе коробку, в которую вы положили какой-то предмет. А на этой коробке вы сделали отметку.
                     </div>
                     <div class="sentence">
-                    <div class="image">  
-                        <img src="/YatsulevichVV/source/image/python/path4-2.svg">  
+                    <div class="image">
+                        
+                        <img src="/YatsulevichVV/source/image/python/path4-2.svg">
+                        
                     </div>
                     </div>
                     <div class="sentence">
                     На языке программирования Python инициализация переменной делается следующим образом.
-                    <pre><code class="python">x = 5
-</code></pre>
+                    <pre><code class="python">x = 5</code></pre>
                     Здесь <code>x</code> &mdash; название переменной (то есть метка на нашей коробке), число <code>5</code> &mdash; это содержимое переменной, а символ <code>=</code> означает, что мы положили число <code>5</code> в переменную с названием <code>x</code>.
                     </div>
                     <div class="sentence">
@@ -60,12 +63,12 @@
                     <div class="sentence">
                     <div class="image">
                         
-                        <img src="/YatsulevichVV/source/image/python/function.svg">
+                        <img src="/YatsulevichVV/source/image/python/function.svg" width="">
                         
                     </div>
                     </div>
                     <div class="sentence">
-                    Для работы нам понадоятся две функции, позволяющие взаимодействовать с пользователем. У любой функции есть своё название и список аргументов (информация на входе). Так выглядит синтаксис обращения к функции.
+                    Для работы нам понадобятся две функции, позволяющие взаимодействовать с пользователем. У любой функции есть своё название и список аргументов (информация на входе). Так выглядит синтаксис обращения к функции.
                     </div>
                     <div class="sentence">
                     <pre><code class="python">function_name(arguments)
@@ -76,7 +79,9 @@
                     </div>
                     <div class="sentence">
                     <pre><code class="python">x = 5
-print(5)
+print(x)
+
+Out[]: 5
 </code></pre>
                     </div>
                     <div class="sentence">
@@ -85,8 +90,88 @@ print(5)
                     <div class="sentence">
                     <pre><code class="python">s = input()
 print(s)
+
+In[]: Hello world!
+
+Out[]: Hello world!
 </code></pre>
                     Здесь пользователь вводит что-то с клавиатуры. Этот ввод сохраняется в переменную <code>s</code>. А затем содержимое переменной <code>s</code> выводится на экран.
+                    </div>
+                    <h2>Арифметика</h2><div class="sentence">
+                    Компьютер умеет работать только с числами. Вся информация: текст, изображения, видео, звуки  &mdash; всё это хранится в виде чисел. Поэтому важно научиться работать с базовой арифметикой.
+                    </div>
+                    <div class="sentence">
+                    Сумма чисел.
+                    <pre><code class="python">x = 5
+y = 2
+z = x + y
+print(z)
+
+Out[]: 7
+</code></pre>
+                    </div>
+                    <div class="sentence">
+                    
+                    Разность двух чисел.
+                    <pre><code class="python">x = 5
+y = 2
+z = x - y
+print(z)
+
+Out[]: 3
+</code></pre>
+                    </div>
+                    <div class="sentence">
+                    Произведение двух чисел.
+                    <pre><code class="python">x = 5
+y = 2
+z = x * y
+print(z)
+
+Out[]: 10
+</code></pre>
+                    </div>
+                    <div class="sentence">
+                    Остаётся ещё одна базовая операция &mdash; это операция деления. Но в Python существует целых три операции деления. Первая &mdash; обыкновенное деление: $5 / 2 = 2,5$.
+                    <pre><code class="python">x = 5
+y = 2
+z = x / y
+print(z)
+
+Out[]: 2.5
+</code></pre>
+                    </div>
+                    <div class="sentence">
+                    Вторая операция деления &mdash; целочисленное деление. Данная операция находит целую часть от деления.
+                    <pre><code class="python">x = 5
+y = 2
+z = x // y
+print(z)
+
+Out[]: 2
+</code></pre>
+                    </div>
+                    <div class="sentence">
+                       
+                    Третья операция деления &mdash; нахождение остатка от деления.
+                    <pre><code class="python">x = 5
+y = 2
+z = x % y
+print(z)
+
+Out[]: 1
+</code></pre>
+                    </div>
+                    <div class="sentence">
+                       
+                        Ещё одна полезная арифметическая операция &mdash; возведение в степень.
+                    <pre><code class="python">x = 5
+y = 2
+z = x ** y
+print(z)
+
+Out[]: 25
+</code></pre>
                     </div>
             </div>
         </div> 
