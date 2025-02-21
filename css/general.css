@@ -143,6 +143,7 @@ h1, h2, h3 {
 
 .sentence {
     text-align: justify;
+    line-height: 1.6;
 }
 
 .image {
@@ -177,6 +178,7 @@ h1, h2, h3 {
     background-color: var(--custom-green);
     border: 1px solid var(--custom-black);
     border-radius: 0px;
+    line-height: 1.6;
 }
 
 img {
@@ -197,15 +199,6 @@ img {
     margin-bottom: 0.5rem;
 }
 
-
-hr {
-    display: block;
-    height: 1px;
-    border: 0;
-    border-top: 1px solid #ff0000;
-    margin: 1em 0;
-    padding: 0;
-}
 
 
 
