@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="/YatsulevichVV/css/general.css">
+    <link rel="stylesheet" href="/YatsulevichVV/css/desktop.css">
+    <link rel="stylesheet" href="/YatsulevichVV/css/mobile.css">
+    <script>
+        fetch('/YatsulevichVV/head.html')
+            .then(response => response.text())
+            .then(data => document.head.innerHTML += data);
+    </script>
+
+    <script src="/YatsulevichVV/js/header.js"></script>
+    <script src="/YatsulevichVV/js/footer.js"></script>
+    <script src="/YatsulevichVV/js/table_of_content.js"></script>
+    <script src="/YatsulevichVV/js/mobile.js"></script>
+    <script src="/YatsulevichVV/js/latex.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script> 
+</head>
+<body>
+    
+    <!-- Mobile version -->
+    <table-of-content class="tc_mobile"></table-of-content>
+    
+    <!-- Desktop version -->
+    <header-component></header-component>
+    <div class="row" id="main_body" onclick="TableOfContentClose()">
+        <table-of-content class="tc_desktop"></table-of-content>
+        <div class="main_content">
+            <div class="abstract">
+                <h1>Математические основы квантовой оптимизации</h1>
+                <h2>Способы представления оптимизационных задач</h2><h3>Конвеер подготовки данных</h3><div class="sentence">
+                    Теперь подберёмся чуть ближе к задаче квантового отжига. Квантовый симулятор представляет из себя регистр кубитов с определёнными связями. То есть математически архитектуру квантового вычислителя можно описать с помощью неориентированного графа, где кубиты &mdash; это вершины графа, а связи между кубитами &mdash; это рёбра между вершинами. То есть теперь с одной стороны мы имеем граф, а с другой стороны мы имеем оптимизационную задачу в форму QUBO. Соответственно, мы можем свести модель QUBO к графовой форме.
+                    </div>
+                    <div class="sentence">
+                    Пусть даны бинарные переменные $x_1, \dots, x_n$ и коэффициенты $c_{ij} \in \mathbb{R}$.  Тогда задача QUBO имеет вид
+                    </div>
+                    <div class="sentence">
+                    \[
+                        \text{argmin}\sum_{i \leqslant j}c_{ij}x_ix_j.
+                    \]
+                    </div>
+                    <div class="sentence">
+                    Модель QUBO может быть напрямую конвертирована в граф $P$ с вершинами $V(P) = \{x_1, \dotsm x_n\}$ и рёбрами $E(P) = \{(x_i, x_j)\space | \space i \neq j, c_{ij} \neq 0\}$, где $c_{ii}$ &mdash; вес вершин, а $c_{ij}$ &mdash; вес рёбер при $i \neq j$.
+                    </div>
+                    <div class="sentence">
+                    В результате мы получаем некоторый граф. Но основная проблема на данном этапе заключается в том, что полученный граф и граф архитектуры квантового симулятора отличаются. Поэтому следующим этапом будет сведение математического графа к физическому. Конвеер подготовки данных представлен на рисунке ниже.
+                    </div>
+                    <div class="sentence">
+                    <div class="image">
+                        
+                        <img src="/YatsulevichVV/source/image/modern_quantum/pipeline_1.svg">     
+                    </div>
+                    </div>
+                    <h3>Минимальное вложение</h3><div class="problem">
+
+                    <h4>Определение. Минимальное вложение</h4>
+                    Пусть дано два графа $P$ и $H$, минимальным вложением графа $P$ в граф $H$ называется функция $\varphi:V(P) \rightarrow \mathcal{P}(V(H))$, которая каждой вершине графа $P$ ставит в соответствие множество вершин из $V(H)$, которое удовлетворяет следующим свойствам:
+                    <ol>
+                        <li> Множества вершин не пересекаются: $\varphi(u) \cap \varphi(v) = \varnothing$ для любых двух различных вершин $u, v \in V(P)$.
+                        <li> Множества вершин индуцируют связанные подграфы: $H[\varphi(u)]$ &mdash; связный для всех вершин $u \in V(P)$.
+                        <li> Связь вершин сохраняется: $(u, v) \in E(P) \rightarrow (u', v') \in E(H)$ для некоторых вершин $u' \in \varphi(u)$ и $v' \in \varphi(v)$.
+                    </ol>
+                    </div>
+                    <div class="sentence">
+                    Стоит отметить, что в общем виде задача вычислительно сложная. Но нам не нужно создавать алгоритм минимального вложения в произвольный граф. Мы будем отталкиваться от архитектуры квантового симулятора.  У одного из квантового компьютера компании D-Wave архитектура имеет вид
+                    </div>
+                    <div class="sentence">
+                    <div class="image">
+                        
+                        <img src="/YatsulevichVV/source/image/modern_quantum/label-d3-k7.png" style="transform:rotate(-90deg);">    
+                    </div>
+                    </div>
+                    <div class="sentence">
+                    Пусть дан полный граф $K_n$. Основная концепция заключается в том, чтобы каждой вершине полного графа $K_n$ поставить в соответствие цепочку из $n - 1$ вершины. Пример для полного графа $K_8$ представлен на рисунке ниже.
+                    </div>
+                    <div class="sentence">
+                    <div class="image">
+                        
+                        <img src="/YatsulevichVV/source/image/modern_quantum/Triad-K8.svg" style="transform:rotate(-90deg);">    
+                    </div>
+                    </div>
+                    <div class="sentence">
+                    Текущее и приоритетное направление архитектуры квантовых симуляторов компании D-Wave основаны на так называемых Химерных графах.
+                    </div>
+                    <div class="sentence">
+                     <div class="image"> 
+                             
+                             <img   src = "/YatsulevichVV/source/image/modern_quantum/chimera.svg" >     
+                     </div> 
+                    </div>
+                    <div class="sentence">
+                    Химерный граф $\mathcal{C}_{L, M, N}$ представляет из себя решётку $M \times N$ полных двудольных графов $K_{L, L}$. К примеру, квантовый симулятор D-Wave 2000Q основан на графе $\mathcal{C}_{4, 16, 16}$. Местоположение кубита в таком графе определяется четвёркой $(l_r, l_c, l_p, l_h)$, где $1 \leqslant l_r \leqslant M$ идентифицирует строку, $1 \leqslant l_c \leqslant N$ идентифицирует столбец, $l_p \in \{1, 2\}$ описывает долю графа и $1 \leqslant l_h \leqslant L$ определяет высоту в двудольном графе.
+                    </div>
+                    <div class="sentence">
+                    Детально рассмотрим идею, предложенную в статье \cite{goodrich2018optimizing}. Главная концепция заключается в введении промежуточного графа, который мы назовём \textit{виртуальным слоем}. Тогда процесс поиска минимального вложения можно будет разделить на две части:
+                    </div>
+                    <div class="sentence">
+                    <ol>
+                        <li> Определим начальное вложение. Начнём с виртуального слоя, который описывает физические кубиты. И определим вид отображений.
+                        <li> Итеративная настройка вложения. После инициализации начального вложение, произведём оценку и определим новый вид виртуального слоя и новый вид отображений.
+                    </ol>
+                    </div>
+                    <div class="sentence">
+                    Пусть задан граф задачи $P$ и граф архитектуры $H$, $\mathcal{T}$ &mdash; шаблон виртуального слоя. Отображение $\varphi: V(P) \rightarrow\mathcal{P}(V(\mathcal{T}))$ &mdash; вложение исходной задачи в виртуальный слой, $\psi:V(\mathcal{T})\rightarrow\mathcal{P}(V(H))$ &mdash; вложение виртуального слоя в физический граф. 
+                    </div>
+                    <div class="sentence">
+                    <div class="image">
+                        
+                        <img src="/YatsulevichVV/source/image/modern_quantum/framework_1.svg" width="80%">   
+                    </div>
+                    </div>
+                    <div class="problem">
+                    <h4>Определение. Семейство виртуальных шаблонов совместимых с Химерными графами</h4>Семейство виртуальных шаблонов $\mathcal{F}$ &mdash; это множество виртуальных графов определённых вместе с семейством функций $\Psi$, таких что для любых $L, M, N \in \mathbb{Z}^+$ существует функция $\psi \in \Psi$ и $\mathcal{T} \in \mathcal{F}$, такие что функция $\psi$ вкладывает граф $\mathcal{T}$ в Химерный граф $\mathcal{C}_{L, M, N}$.
+                    </div>
+                    <div class="sentence">
+                    Нахождения функции виртуального вложения $\varphi: V(P) \rightarrow \mathcal{P}(V(\mathcal{T}))$ достаточно для определения начального вложения $\chi: V(P) \rightarrow \mathcal{P}(V(H))$, которое может быть построено следующим образом
+                    </div>
+                    <div class="sentence">
+                    \[
+                        \chi(u) = \bigcup_{x \in \varphi(u)}\psi(x).
+                    \]
+                    </div>
+                    <div class="problem">
+                    <h4>Определение. Этап вложения</h4>Этап вложения принимает на вход граф $P$ некоторой задачи и виртуальный слой $\mathcal{T}$, и выдаёт на выходе виртуальное вложение $\varphi:V(P) \rightarrow \mathcal{P}(V(\mathcal{T}))$
+                    </div>
+                    <!-- <br> -->
+                    <div class="problem">
+                    <h4>Определение. Этап редукции</h4>Этап редукции принимает на вход граф $P$ некоторой задачи, виртуальный слой $\mathcal{T}$ и виртуальное отображение $\varphi$. На выходе алгоритм выдаёт новый виртуальный слой $\mathcal{T}'$ и новое виртуальное отображение $\varphi'$ (которое может совпадать с отображением $\varphi$).
+                    </div>
+                    <!-- <br> -->
+                    <div class="problem">
+                    <h4>Определение. Семейство двудольных виртуальных шаблонов</h4>Физический граф $\mathcal{C}_{L, M, N}$ описывает виртуальный двудольный граф $\mathcal{T} = K_{LM, LN}$ с долями $L(\mathcal{T}) = \{v_1, \dots, v_{LM}\}$ и $R(\mathcal{T}) = \{h_1, \dots, h_{LN}\}$. Функция минимального вложения определяется следующим образом
+                    \begin{align}
+                        \begin{split}
+                            \psi(v_i) &= \{(j, \lceil i/L \rceil, 1, i \text{ mod }L)| 1\leqslant j \leqslant M\},\\
+                            \psi(h_i) &= \{(\lceil i / L \rceil, j, 2, i \text{ mod } L)|1 \leqslant j \leqslant N\}.
+                        \end{split}
+                    \end{align}
+                    </div>
+                    <div class="sentence">
+                    <b>Шаг 1.</b> Пусть дан граф $P$ некоторой задачи с множеством вершин $V(P) = \{u_1, \dots, u_n)\}$, где $n \leqslant \min(LM, LN)$ и двудольный виртуальный слой $\mathcal{T}$ с долями $L(\mathcal{T}) = \{v_1, \dots, v_{LM}\}$ и $R(\mathcal{T}) = \{h_1, \dots, h_{LN}\}$. Возьмём в качестве начального отображения $\varphi(u_i) = \{v_i, h_i\}$ для $1 \leqslant i \leqslant n$.
+                    </div>
+                    <div class="sentence">
+                    <b>Шаг 2.</b> Пусть задан стандартный ввод $P$, $\mathcal{T}$ и $\varphi$. Для каждого виртуального кубита $v_i \in L(\mathcal{T})$ определим множество соседей $I_{v_i} = \{j| (v_i, h_j) \in E(\mathcal{T})\}$. Определим для каждой вершины левой доли метрику
+                    \[
+                        \text{score}(v_i) = 1 + \left\lfloor \frac{\max(I_{v_i})}{L} \right\rfloor - \left\lfloor \frac{\min(I_{v_i})}{L} \right\rfloor
+                    \]
+                    Для вершин правой доли метрика определяется аналогично. Тогда метрика кубита для отображения $\varphi$ и виртуального слоя $\mathcal{T}$ определяется как
+                    \[
+                        \sum_{v_i \in L(\mathcal{T})}\text{score}(v_i) + \sum_{h_i \in R(\mathcal{T})}\text{score}(h_i).
+                    \]
+                    </div>
+                    <div class="sentence">
+                    <b>Шаг 3.</b> Пусть задан стандартный ввод $P$, $\mathcal{T}$ и $\varphi$. Пусть $S$ &mdash; множество вершин задачи, сопоставленных по крайней мере одному виртуальному кубиту на каждой доле, $\mathcal{E}$ &mdash; это множество вершин $E$ виртуального слоя, таких что для любых вершин $u, v \in S$ существует ровно одно ребро $(u', v') \in E$ с $u' \in \varphi(u)$ и $v' \in \varphi(v)$. Тогда на этом шаге нужно вычислить величину
+                    \[
+                        \text{argmin}_{E \in\mathcal{E}} \text{Qubit-Scoring}(E).
+                    \]
+                    </div>
+                    <div class="sentence">
+                    <b>Шаг 4.</b> Пусть задан стандартный ввод $P$, $\mathcal{T}$ и $\varphi$.Пусть $S$ &mdash; множество вершин задачи, сопоставленных по крайней мере одному виртуальному кубиту на каждой доле. 
+                    \[
+                        E = \{(v_i, h_j)|i \leqslant j, v_i \in \varphi(x), h_j \in \varphi(y), x, y\in V(P), y \in N(x)\},
+                    \]
+                    где $N(u)$ &mdash; кол-во вершин, смежных с вершиной $u$.
+                    </div>
+                    <div class="sentence">
+                    <b>Шаг 5.</b> Пусть задан стандартный ввод $P$, $\mathcal{T}$ и $\varphi$, $E$ &mdash; множество вершин, полученных на предыудщем шаге. Результатом работы данного шага будет новое виртуальное окружение $\mathcal{T'}$ с вершинами $V(\mathcal{T})$ и рёбрами $E(\mathcal{T}) - E$.
+                    </div>
+                    <div class="sentence">
+                    <b>Шаг 6.</b> Пусть задан стандартный ввод $P$, $\mathcal{T}$, $\varphi$ и параметр $k$. Тогда новое отображение можно вычислить следующим образом.
+                    <ol>
+                        <li> Пусть $\varphi' = \varphi$.
+                        <li> Начиная с $\varphi'$ посчитаем все $C_n^k k!$ способов переобозначить ровно $k$ вершин в каждой части. И для каждого случая посчитаем матрику качества для каждого кубита.
+                        <li> Выберем тот результат, который даёт наименьшее значение метрики.
+                        <li> Повторять эти шаги до получения меньшего результата.
+                    </ol>
+                    </div>
+                    <div class="sentence">
+                     
+                    </div>
+                    
+                    
+            </div>
+        </div>
+    </div>
+    <footer-component></footer-component>
+</body>

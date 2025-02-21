@@ -26,7 +26,8 @@
         },
         "modern_qc": {
             "modern_qc_lecture1.html": "Лекция 1",
-            "modern_qc_lecture2.html": "Лекция 2"
+            "modern_qc_lecture2.html": "Лекция 2",
+            "modern_qc_lecture3.html": "Лекция 3"
         },
         "ege_inf": {
             "ege_inf_task17.html": "Задание 17"
@@ -46,6 +47,7 @@
         "chapter15.html": "gmurman",
         "modern_qc_lecture1.html": "modern_qc",
         "modern_qc_lecture2.html": "modern_qc",
+        "modern_qc_lecture3.html": "modern_qc",
         "ege.html": "sections",
         "ege_inf_task17.html": "ege_inf"
     }
