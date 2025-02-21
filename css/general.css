@@ -183,6 +183,8 @@ h1, h2, h3 {
 
 img {
     max-width: 100%;
+    overflow-x: auto;
+    overflow-y: hidden;
 }
 
 .python {
