@@ -282,10 +282,7 @@ img {
         width: 100%; 
         display: flex;
         position: relative; 
-        /* Добавил новые стили */
-        flex-direction: row;
-        flex-wrap: wrap;
-        justify-content: flex-end;
+
     }
     
     
@@ -406,10 +403,7 @@ img {
         width: 100%; 
         display: flex; 
         position: relative;
-        /* Добавил новые стили */
-        flex-direction: row;
-        flex-wrap: wrap;
-        justify-content: flex-end; 
+
     }
 
     .tc_mobile {

@@ -1,0 +1,137 @@
+@media only screen and (min-width: 650px) {
+     
+    body {
+        display: flex;
+        flex-direction: column;
+        min-height: 100vh;
+    
+        padding-left: 1rem;
+        padding-right: 1rem;
+    }
+    
+    .header_in {
+        margin: 50px;
+    }
+    
+
+    /* Structure of page */
+    
+    .header {
+        max-width: var(--width-main);
+        margin: auto;
+        margin-bottom: 1rem;
+        margin-top: 1rem;
+        padding: 1rem;
+        text-align: left;
+        background: var(--custom-blue);
+        border: var(--custom-black) solid 1px;
+        min-height: 100px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    
+    .contact-info {
+        display: flex;
+    }
+
+    .link {
+        flex: 50%;
+        display: flex;
+        align-content: center;
+        flex-wrap: wrap;
+        margin-right: 0.5rem;
+    }
+
+    .content-button {
+        display: none;
+    }
+    
+    .header h1 {
+        font-size: 2.5rem;
+        margin-top: 1rem;
+        margin-bottom: 1rem;
+    }
+    
+    .table_of_content {
+        min-height: 200px;
+        width: 150px;
+        height: 100%; /* Высота будет определяться контентом */
+        max-height: 80vh; /* Максимальная высота 80% от высоты экрана */
+        background: var(--custom-blue);
+        margin-right: 1rem;
+        padding: 1rem;
+        border: var(--custom-black) 1px solid;
+        position: sticky; /* Позиционирование */
+        top: 1rem; /* Отступ от верха при прилипании */
+        float: left;
+        overflow-y: auto; /* Добавляем прокрутку если контент не помещается */
+    }
+    
+    .table_of_content h2 {
+        margin-top: 0;
+        margin-bottom: 1rem;
+        color: var(--custom-black);
+    }
+    
+    .main_content {
+        height: auto; /* Заменить min-height */
+        float: left;
+        width: calc(100% - 150px - 1rem);
+        padding: 1rem;
+        background: var(--custom-white);
+        border: var(--custom-black) 1px solid;
+        position: relative;
+        overflow-y: auto; /* Добавить при необходимости прокрутки контента */
+    }
+
+    
+    #main_body {
+        max-width: var(--width-main);
+        margin: auto;
+        flex: 1; 
+        width: 100%; 
+        display: flex;
+        position: relative; 
+    }
+    
+    
+    .row:after {
+        bottom: 0;
+        content: "";
+        display: table;
+        clear: both;
+    }
+    
+    .footer {
+        max-width: var(--width-main);
+        margin: auto;
+        margin-top: 1rem;
+        margin-bottom: 1rem;
+        text-align: right;
+        background: var(--custom-blue);
+        border: var(--custom-black) solid 1px;
+        padding: 1rem;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .privacy_mobile {
+        display: none;
+    }
+    
+    .column_33 {
+        margin: auto;
+        float: left;
+        width: 33%;
+    }
+
+    .tc_mobile {
+        display: none;
+    }
+
+    .tc_desktop {
+        display: block;
+    }
+}

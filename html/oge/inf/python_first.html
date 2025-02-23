@@ -1,7 +1,9 @@
 <!DOCTYPE html>
 <head>
     <meta charset="utf-8">
-    <link rel="stylesheet" href="/YatsulevichVV/css/style.css">
+    <link rel="stylesheet" href="/YatsulevichVV/css/general.css">
+    <link rel="stylesheet" href="/YatsulevichVV/css/desktop.css">
+    <link rel="stylesheet" href="/YatsulevichVV/css/mobile.css">
     <script>
         fetch('/YatsulevichVV/head.html')
             .then(response => response.text())
@@ -28,18 +30,216 @@
         <table-of-content class="tc_desktop"></table-of-content>
         <div class="main_content">
             <div class="abstract">
-                <h1>Заглушка</h1>
-                <h2>Введение в Python</h2>
+                <h1>Язык программирования Python</h1>
+                <h2>Введение</h2><div class="sentence">
+                    Python &mdash; один из самых популярных языков программирования в настоящее время. Он используется практически везде: веб-разработка, геймдев, машинное обучение, научные исследования и много чего другого.
+                    </div>
+                    <div class="sentence">
+                    Начнём изучения с простой команды.
+                    <pre><code class="python">print('Hello world!')
+
+Out[]: Hello world!
+</code></pre>
+                    Данная команда выводит строку <code>Hello world!</code> на экран. Чуть позже опишем более детально, что означает каждый символ в данной команде.
+                    </div>
+                    <div class="sentence">
+                    Изучение программирования стоит начать с изучения двух фундаментальных понятий: переменная и функция. Что умеет делать компьютер? В основном компьютер умеет хранить информацию и её обрабатывать. Как раз для хранения информации используются переменные, а для обработки &mdash; функции. Представьте себе коробку, в которую вы положили какой-то предмет. А на этой коробке вы сделали отметку.
+                    </div>
+                    <div class="sentence">
+                    <div class="image">
+                        
+                        <img src="/YatsulevichVV/source/image/python/path4-2.svg">
+                        
+                    </div>
+                    </div>
+                    <div class="sentence">
+                    На языке программирования Python инициализация переменной делается следующим образом.
+                    <pre><code class="python">x = 5</code></pre>
+                    Здесь <code>x</code> &mdash; название переменной (то есть метка на нашей коробке), число <code>5</code> &mdash; это содержимое переменной, а символ <code>=</code> означает, что мы положили число <code>5</code> в переменную с названием <code>x</code>.
+                    </div>
+                    <div class="sentence">
+                    Теперь перейдём к рассмотрению функции. Функцию можно представить в виде торгового автомата. Автомат принимает на вход денежные купюры, а на выходе выдаёт тот товар, который вы выбрали. То есть автомат обрабатывает вашу информацию на входе, и выдаёт что-то на выходе.
+                    </div>
+                    <div class="sentence">
+                    <div class="image">
+                        
+                        <img src="/YatsulevichVV/source/image/python/function.svg" width="">
+                        
+                    </div>
+                    </div>
+                    <div class="sentence">
+                    Для работы нам понадобятся две функции, позволяющие взаимодействовать с пользователем. У любой функции есть своё название и список аргументов (информация на входе). Так выглядит синтаксис обращения к функции.
+                    </div>
+                    <div class="sentence">
+                    <pre><code class="python">function_name(arguments)
+</code></pre>
+                    </div>
+                    <div class="sentence">
+                    Функция <code>print()</code> принимает на вход какую-то строку, а в качестве выходной информации выводит введённую строку на экран.
+                    </div>
+                    <div class="sentence">
+                    <pre><code class="python">x = 5
+print(x)
+
+Out[]: 5
+</code></pre>
+                    </div>
+                    <div class="sentence">
+                    Функция <code>input()</code> принимает на вход информацию, введённую пользователем с клавиатуры. Поскольку пользователь сам вводит эту информацию, то в скобках мы ничего не указываем.  А в качестве результата работы функции выдаётся то, что ввёл пользователь.
+                    </div>
+                    <div class="sentence">
+                    <pre><code class="python">s = input()
+print(s)
+
+In[]: Hello world!
+
+Out[]: Hello world!
+</code></pre>
+                    Здесь пользователь вводит что-то с клавиатуры. Этот ввод сохраняется в переменную <code>s</code>. А затем содержимое переменной <code>s</code> выводится на экран.
+                    </div>
+                    <h2>Арифметика</h2><div class="sentence">
+                    Компьютер умеет работать только с числами. Вся информация: текст, изображения, видео, звуки  &mdash; всё это хранится в виде чисел. Поэтому важно научиться работать с базовой арифметикой.
+                    </div>
+                    <div class="sentence">
+                    Сумма чисел.
+                    <pre><code class="python">x = 5
+y = 2
+z = x + y
+print(z)
+
+Out[]: 7
+</code></pre>
+                    </div>
+                    <div class="sentence">
+                    
+                    Разность двух чисел.
+                    <pre><code class="python">x = 5
+y = 2
+z = x - y
+print(z)
+
+Out[]: 3
+</code></pre>
+                    </div>
+                    <div class="sentence">
+                    Произведение двух чисел.
+                    <pre><code class="python">x = 5
+y = 2
+z = x * y
+print(z)
+
+Out[]: 10
+</code></pre>
+                    </div>
+                    <div class="sentence">
+                    Остаётся ещё одна базовая операция &mdash; это операция деления. Но в Python существует целых три операции деления. Первая &mdash; обыкновенное деление.
+                    <pre><code class="python">x = 5
+y = 2
+z = x / y
+print(z)
+
+Out[]: 2.5
+</code></pre>
+                    </div>
+                    <div class="sentence">
+                    Вторая операция деления &mdash; целочисленное деление. Данная операция находит целую часть от деления.
+                    <pre><code class="python">x = 5
+y = 2
+z = x // y
+print(z)
+
+Out[]: 2
+</code></pre>
+                    </div>
+                    <div class="sentence">
+                       
+                    Третья операция деления &mdash; нахождение остатка от деления.
+                    <pre><code class="python">x = 5
+y = 2
+z = x % y
+print(z)
+
+Out[]: 1
+</code></pre>
+                    </div>
+                    <div class="sentence">
+                       
+                        Ещё одна полезная арифметическая операция &mdash; возведение в степень.
+                    <pre><code class="python">x = 5
+y = 2
+z = x ** y
+print(z)
+
+Out[]: 25
+</code></pre>
+
+<h2>Типы данных</h2><div class="sentence">
+    В любом языке программирования информация может быть представлена разными типами данных. 
+    </div>
+    <div class="sentence">
+    <ul>
+        <li> <code>int</code> &mdash; целые числа. Например, <code>9, -4, 0</code>.
+        <li> <code>float</code> &mdash; числа с плавающей запятой (вещественные числа). Например, <code>0.2, 2.33333333, -4.1956019, 1.0</code>.
+        <li> <code>char</code> &mdash; символы. Например, <code>'a', 'x', '6', '+'</code>.
+        <li> <code>string</code> &mdash; строки. Например, <code>'text', '6.23', 'Hello world!'</code>.
+    </ul>
+    Разница заключается в принципе выделения памяти и принципах обработки значений. 
+    </div>
+    <div class="sentence">
+    Рассмотрим задачу: пользователь вводит два числа. А программа считает сумму этих чисел. Казалось бы, задача решается довольно легко. Сначала считаем значения, введённые пользователем с помощью функции <code>input()</code>. После чего найдём сумму и выведем на экран, используя функцию <code>print()</code>.
+    </div>
+    <div class="sentence">
+    <pre><code class="python">a = input()
+b = input()
+c = a + b
+print(c)
+
+In[]: 2
+ ...: 3
+
+Out[]: 23
+</code></pre>
+    Получается странный результат. Ибо вместо нахождения суммы двух чисел программа просто написала их рядом. В чём же заключается проблема? Суть в том, что результатом работы функции <code>input()</code> является строка (то есть тип <code>string</code>). А мы хотим получить число. Для того, чтобы преобразовать строку в числу существует функция <code>int()</code>. Функция <code>int()</code> принимает на вход строку, а на выходе выдаёт число, если она может преобразовать строку в число. 
+    <pre><code class="python">a_s = input()
+b_s = input()
+a = int(a_s)
+b = int(b_s)
+c = a + b
+print(c)
+
+In[]: 2
+ ...: 3
+
+Out[]: 5
+</code></pre>
+    </div>
+    <div class="sentence">
+    Написанный код получился довольно громоздким для такой, какзалось бы, простой операции. Одним из основных преимуществ языка программирования Python заключается в том, что многие операции можно реализовать довольно компактным образом. В Python функции можно вкладывать друг в друга. Например, процесс обработки данных вложенными функциями для команды <code style="color: red;">int(</code><code style="color: green;">input()</code><code style="color: red;">)</code> представлен на схеме ниже. 
+    <div class="image">
+        
+        <img src="/YatsulevichVV/source/image/python/int(input()).svg">    
+    </div>
+    Сначала выполняется внутренняя функция <code>input()</code>. Затем результат работы этой функции автоматически передаётся во внешнюю функцию <code>int()</code>.
+    </div>
+    <div class="sentence">
+    Тогда исходную задачу можно решить следующим образом.
+    <pre><code class="python">a = int(input())
+b = int(input())
+c = a + b
+print(c)
+
+In[]: 2
+ ...: 3
+
+Out[]: 5
+</code></pre>
     
-                <pre><code class="python">def sum(x, y):
-    return x + y
+    </div>
+    
 
-x = int(input())
-y = int(input())
-z = sum(x, y)
-print(z)</code></pre>
+
+                    </div>
             </div>
-
         </div> 
     </div>
     <footer-component></footer-component>

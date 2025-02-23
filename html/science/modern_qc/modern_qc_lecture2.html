@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="/YatsulevichVV/css/general.css">
+    <link rel="stylesheet" href="/YatsulevichVV/css/desktop.css">
+    <link rel="stylesheet" href="/YatsulevichVV/css/mobile.css">
+    <script>
+        fetch('/YatsulevichVV/head.html')
+            .then(response => response.text())
+            .then(data => document.head.innerHTML += data);
+    </script>
+
+    <script src="/YatsulevichVV/js/header.js"></script>
+    <script src="/YatsulevichVV/js/footer.js"></script>
+    <script src="/YatsulevichVV/js/table_of_content.js"></script>
+    <script src="/YatsulevichVV/js/mobile.js"></script>
+    <script src="/YatsulevichVV/js/latex.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script> 
+</head>
+<body>
+    
+    <!-- Mobile version -->
+    <table-of-content class="tc_mobile"></table-of-content>
+    
+    <!-- Desktop version -->
+    <header-component></header-component>
+    <div class="row" id="main_body" onclick="TableOfContentClose()">
+        <table-of-content class="tc_desktop"></table-of-content>
+        <div class="main_content">
+            <div class="abstract">
+                <h1>Математические основы квантовой оптимизации</h1>
+                <h2>Примеры задач</h2><h3>MaxCut</h3><div class="sentence">
+                    Пусть задан неориентированный граф $G = (V, E)$. Необходимо найти подмножество вершин $W \subset V$, такое что количество рёбер между подмножеством $W$ и его дополнением $\overline{W}$ было максимальным.
+                    </div>
+                    <div class="sentence">
+                    Задачу можно переформулировать следующим образом. Определить множество вершин $W$ &mdash; это тоже самое, что определить какие вершины принадлежат этому множеству, а какие нет. То есть каждой вершине $v_i$ можно поставить в соответствие бинарную переменную $x_i$, которая равна $1$, если вершина будет принадлежать множеству $W$ и $0$ в противном случае.
+                    </div>
+                    <div class="sentence">
+                    Теперь нужно определить целевую функцию $f(x_1, x_2, \dots x_{n})$, где $n = |V|$, которая бы решала исходную задачу. Необходимо максимизировать количество рёбер, у которых концевые вершины принадлежат разным классам (то есть $x_i \neq x_j$). 
+                    </div>
+                    <div class="sentence">
+                    \[
+                        f(x_i, x_j) = x_i \oplus x_j.
+                    \]
+                    Такая функция будет давать $0$, если классы одинаковые и $1$, если классы разные. Представим XOR в виде произведения и суммы, тогда получим 
+                    </div>
+                    <div class="sentence">
+                    \[
+                        f(x_i, x_j) = x_i + x_j - 2x_ix_j.
+                    \]
+                    </div>
+                    <div class="sentence">
+                    Тогда задача поиска максимального разреза сведётся к следующей оптимизационной задаче
+                    </div>
+                    <div class="sentence">
+                    \[
+                        \max \sum_{(i, j)\in E}(x_i + x_j - 2x_ix_j),
+                    \]
+                    или что соответствует задаче минимазации
+                    \[
+                        \min \sum_{(i, j)\in E}(-x_i - x_j + 2x_ix_j).
+                    \]
+                    </div>
+                    <div class="sentence">
+                    Рассмотрим конкретный пример графа. Пусть задан граф
+                    <div class="image">
+                        
+                        <img src="/YatsulevichVV/source/image/modern_quantum/path1.svg">
+                        
+                    </div>
+                    </div>
+                    <div class="sentence">
+                    Составим для этого графа целевой функционал.
+                    \begin{align}
+                        \begin{split}
+                            f(\mathbf{x}) = &-x_1 -x_2+2x_1x_2 -x_2 -x_3+2x_2x_3 -x_3 -x_4+2x_3x_4 -\\
+                            &-x_4 -x_5+2x_4x_5  -x_1 -x_5+2x_1x_5 -x_2 -x_5+2x_2x_5 =\\
+                            = &-2x_1 - 3x_2 - 2x_3 - 2x_4 - 3x_5 + \\
+                            &+2x_1x_2 + 2x_2x_3 + 2x_3x_4 + 2x_4x_5 + 2x_1x_5 + 2x_2x_5
+                        \end{split}
+                    \end{align}
+                    </div>
+                    <div class="sentence">
+                    Теперь имея целевой функционал можно построить матрицу симметричную $Q$. 
+                    \[
+                        Q = 
+                        \begin{pmatrix}
+                            -2 & 1 & 0 & 0 & 1\\
+                            1 & -3 & 1 & 0 & 1\\
+                            0 & 1 & -2 & 1 & 0\\
+                            0 & 0 & 1 & -2 & 1\\
+                            1 & 1 & 0 & 1 & -3\\
+                        \end{pmatrix}
+                    \]
+                    </div>
+                    <div class="sentence">
+                    Решая поставленную оптимимзационную задачу получим следующий ответ.
+                    <div class="image">
+                        
+                        <img src="/YatsulevichVV/source/image/modern_quantum/path1-76.svg">
+                        
+                    </div>
+                    </div>
+                    <h3>Акционный портфель</h3><div class="sentence">
+                    Рассмотрим пример реальной прикладной задачи экономического сектора. Пусть имеется некоторая биржа. На этой бирже через равные промежутки времени можно покупать акции разных компаний в разном количестве. Пусть имеется $N$ различных акций, $T$ &mdash; кол-во временных промежутков, а $K$ &mdash; это сумма, которую может вложить акционер на каждом шаге.
+                    </div>
+                    <div class="sentence">
+                    Введём матрицу $\omega$ размером $N \times T$, содержащая неотрицательные целые числа. Элемент матрицы $\omega_{nt}$ обозначает кол-во вложений в акцию под номером $n \in \{1, \dots, N\}$ в промежуток времени под номером $t \in \{1, \dots, T\}$. Через $\omega_t$ обозначим $t$-ый столбец матрицы $\omega$, описывающий все вложения в промежуток времени под номером $t$.
+                    </div>
+                    <div class="sentence">
+                    Далее опишем все финансовые процессы, происходящие с акциями. И на основе этого описания, представим функционал, который необходимо будет минимизировать. С течением времени ожидаемая прибыль от каждой акции меняется. Обозначим через $\mu_t \in \mathbb{R}^N$ вектор, содержащий среднюю прибыль от каждой акции в момент времени $t$. Соответственно ожидаемую прибыль при определённых вложениях в момент времени $t$ можно вычислить как $\mu_t^T \omega_t$.
+                    </div>
+                    <div class="sentence">
+                    Теперь введём коэффициент $\gamma \in \mathbb{R}$ характеризующий склонность к рискам. Суть в том, что часто стоимость одной акции может зависеть от стоимости другой. Зависимость не обязательно должна быть линейной. Достаточно наличия некоторых корреляций. И этот фактор тоже влияет на итоговую стоимость акционного портфеля. Пусть $\Sigma_t \in \mathbb{R}^N \times \mathbb{R}^N$ &mdash; корреляционная матрица зависимости стоимостей акций. Тогда её влияение в момент времени $t$ можно описать слагаемым $\frac{\gamma}{2}\omega_t^T\Sigma_t \omega_t$.
+                    </div>
+                    <div class="sentence">
+                    Но это ещё не всё. Поскольку акции невозможно купить моментально. То есть имеется некоторая задержка при покупке акции. Обозначим через $c_{nt} \in \mathbb{R}$ временные транзакционные издержки. Определим матрицу $\Lambda_t$, элементы которой можно найти по формуле $\Lambda_{tnn'} = c_{nt}\delta_{nn'}$. Суть в том, что такие издержки будут влиять лишь на те акции, которые были преобретены на последнем шаге. Поэтому стоит ввести ещё одно обозначение $\Delta\omega_t \equiv \omega_t - \omega_{t - 1}$. Тогда влияение издержек в момент времени $t$ можно описать слагаемым $\Delta\omega_t^T\Lambda_t \Delta\omega_t$.
+                    </div>
+                    <div class="sentence">
+                    С другой стороны, некоторые акции могут давать моментальный вклад. Поэтому аналогично введём матрицу $\Lambda'_t$, которая содржит информацию о моментальных вложениях. Тогда её влияение в момент времени $t$ можно описать слагаемым $\Delta\omega_t^T\Lambda'_t \Delta\omega_t$.
+                    </div>
+                    <div class="sentence">
+                    В итоге, имеется четыре слагаемых, которые влияют на итоговую прибыль. Со знаком плюс отмечены слагаемые, которые увеличивают прибыль, а со знаком минус &mdash; уменьшающие прибыль.
+                    <ol>
+                        <li> Ожидаемая прибыль $\mu_t^T \omega_t$ 
+                        <li> Фактор зависимости и риска $-\frac{\gamma}{2}\omega_t^T\Sigma_t \omega_t$
+                        <li> Влияение издержек $-\Delta\omega_t^T\Lambda_t \Delta\omega_t$
+                        <li> Моментальное влияени $\Delta\omega_t^T\Lambda'_t \Delta\omega_t$
+                    </ol>
+                    Теперь для составления целевого функционала останется просуммировать все факторы по всем временным промежуткам. В результате мы получим функционал вида
+                    </div>
+                    <div class="sentence">
+                    \[
+                        f(\omega) = \text{argmax}_{\omega} \sum_{t = 1}^T\left(\mu_t^T \omega_t -\frac{\gamma}{2}\omega_t^T\Sigma_t \omega_t -\Delta\omega_t^T\Lambda_t \Delta\omega_t + \Delta\omega_t^T\Lambda'_t \Delta\omega_t\right).
+                    \]
+                    </div>
+                    <div class="sentence">
+                    На этом постановка задачи ещё не закончена, поскольку ещё не учтены финансовые возможности акционера. Для этого нужно добавить ограничения
+                    </div>
+                    <div class="sentence">
+                    \[
+                        \forall t \in \{1, \dots, T\} \quad \sum_{n = 1}^N \omega_{nt} = K.
+                    \]
+                    </div>
+                    <div class="sentence">
+                    Чтобы добавить это ограничение к исходному целевому функционалу воспользуемся методикой, описанной в разделе \ref{CQM}. Для этого введём штрафное слагаемое 
+                    </div>
+                    <div class="sentence">
+                    \[
+                        \text{penalty}(\omega) = -M \sum_{t = 1}^T\left(K - \sum_{n=1}^N\omega_{nt} \right)^2,
+                    \]
+                    где $M$ &mdash; это сила штрафного слагаемого. По сути $M$ представляет из себя гиперпараметр. С учётом штрафного слагаемого целевой функционал примет вид
+                    </div>
+                    <div class="sentence">
+                    \[
+                        f(\omega) = \text{argmax}_{\omega} \sum_{t = 1}^T\left(\mu_t^T \omega_t -\frac{\gamma}{2}\omega_t^T\Sigma_t \omega_t -\Delta\omega_t^T\Lambda_t \Delta\omega_t + \Delta\omega_t^T\Lambda'_t \Delta\omega_t\right) + \text{penalty}(\omega).
+                    \]
+                    </div>
+                    <div class="sentence">
+                    На данном этапе построена дискретная модель оптимизации. Теперь же её нужно свести к модели QUBO, то есть свести к бинарной модели. А это можно сделать с помощью способа, описанного в разделе \ref{DQM}. Для этого каждый элемент $\omega_{nt}$ представим в виде комбинации бинарных переменных
+                    </div>
+                    <div class="sentence">
+                    \[
+                        \omega_{nt}(\mathbf{x}) = \sum_{d = 1}^D a(d)x_{dnt}.
+                    \]
+                    </div>
+                    <div class="sentence">
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    </div>
+                    
+            </div>
+        </div>
+    </div>
+    <footer-component></footer-component>
+</body>
