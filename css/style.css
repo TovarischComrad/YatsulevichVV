@@ -160,12 +160,11 @@ h1, h2, h3 {
 
 .profile-image {
     border: 1px var(--custom-black) solid;
-    height: 30%;
-    width: 30%;
-    max-width: 100%;
-    flex: 50%;
+    height: 100%;
+    min-width: 240px;
     margin-right: 1rem;
-    flex-wrap: nowrap;
+    display: block;
+    
 }
 
 .problem {
@@ -448,5 +447,9 @@ img {
 
     .imgsentence {
         display: block;
+        border: 1px var(--custom-black) solid;
+        height: 100%;
+        min-width: 100px;
+        margin-right: 1rem;
     }
 }
