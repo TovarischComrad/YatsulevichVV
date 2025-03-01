@@ -1,24 +1,21 @@
 {
     "db": {
         "inf": {
-            "python_first.html": "Введение в Python",
-            "#": "Продвинутый Python"
+            
         },
         "math": {
-            "oge_math_21_a.html": "Задание 21",
-            "#": "Задание 15"
+            "oge_math_21_a.html": "Задание 21"
         },
         "phys": {
             "oge_phys_formulas.html": "Формулы",
-            "termodynamic.html": "Термодинамика",
-            "#": "Механика"
+            "termodynamic.html": "Термодинамика"
         },
         "sections": {
+            "/YatsulevichVV/html/it/it.html": "IT",
             "/YatsulevichVV/html/oge/oge.html": "ОГЭ",
             "/YatsulevichVV/html/ege/ege.html": "ЕГЭ",
-            "#2": "ОЛИМПИАДЫ",
-            "/YatsulevichVV/html/high_math/high_math.html": "ВЫСШАЯ МАТЕМАТИКА",
-            "/YatsulevichVV/html/science/science.html": "НАУКА И КНИГИ"
+            "/YatsulevichVV/html/science/science.html": "НАУКА",
+            "/YatsulevichVV/html/high_math/high_math.html": "КНИГИ"
         },
         "gmurman": {
             "chapter1.html": "Глава 1",
@@ -31,10 +28,13 @@
         },
         "ege_inf": {
             "ege_inf_task17.html": "Задание 17"
+        },
+        "it": {
+            "python_first.html": "Введение в Python"
         }
     },
     "types": {
-        "python_first.html": "inf",
+        "python_first.html": "it",
         "oge_math_21_a.html": "math",
         "oge_phys_formulas.html": "phys",
         "termodynamic.html": "phys",
@@ -43,6 +43,7 @@
         "privacy.html": "sections",
         "high_math.html": "sections",
         "science.html": "sections",
+        "it.html": "sections",
         "chapter1.html": "gmurman",
         "chapter15.html": "gmurman",
         "modern_qc_lecture1.html": "modern_qc",
