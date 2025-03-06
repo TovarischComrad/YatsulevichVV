@@ -113,11 +113,39 @@
         overflow-y: auto; /* Добавить при необходимости прокрутки контента */
     }
     
-    .profile-image {
+    .generalpage {
+        display: flex;
+        flex-direction: column;
+    }
+    
+    .textsentence {
         width: 100%;
+        order: 2; /* Этот элемент будет отображаться вторым */
+    }
+    
+    .imgsentence {
+        width: 100%;
+        order: 1; /* Этот элемент будет отображаться первым */
     }
 
-    .imgsentence {
+    .desktop-only {
+        display: none;
+    }
+    
+    .mobile-only {
         display: block;
+    }
+
+    .mobile-main-title {
+        display: block;
+        margin-bottom: 1rem;
+    }
+    
+    .desktop-main-title {
+        display: none;
+    }
+
+    .textsentence h1 {
+        display: none;
     }
 }

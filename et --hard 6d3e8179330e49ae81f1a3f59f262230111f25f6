@@ -1,0 +1,274 @@
+[33mcommit e064c19947cc569513e45dcc915d563bd231bc50[m[33m ([m[1;36mHEAD[m[33m -> [m[1;32mmain[m[33m, [m[1;31morigin/main[m[33m)[m
+Merge: 6d3e817 bf687bd
+Author: CryptoNerf <anuta1711_98@mail.ru>
+Date:   Wed Feb 5 02:55:10 2025 +0400
+
+    Merge branch 'main' of https://github.com/CryptoNerf/YatsulevichVV
+
+[33mcommit 6d3e8179330e49ae81f1a3f59f262230111f25f6[m
+Author: CryptoNerf <anuta1711_98@mail.ru>
+Date:   Wed Feb 5 02:36:29 2025 +0400
+
+    ok
+
+[33mcommit bf687bda37009dab1176e83e93c197b7b948ed92[m
+Merge: a0caba2 72a8790
+Author: Yatsulevich Vladimir <85439868+TovarischComrad@users.noreply.github.com>
+Date:   Wed Feb 5 00:33:21 2025 +0300
+
+    Merge branch 'E.V.2' into main
+
+[33mcommit a0caba2b2d73051f3f73632fc4ea73be2361ec32[m
+Author: CryptoNerf <anuta1711_98@mail.ru>
+Date:   Wed Feb 5 01:29:58 2025 +0400
+
+    minor apdate
+
+[33mcommit 72a8790d2f6aefc925603e69f6b1c7a6b4092b1d[m
+Author: Владимир Яцулевич <vovas53@yandex.ru>
+Date:   Wed Feb 5 00:26:04 2025 +0300
+
+    Test
+
+[33mcommit 5449c4d4253885a3f30fece1b0da0e536a357b9d[m
+Author: Владимир Яцулевич <vovas53@yandex.ru>
+Date:   Tue Feb 4 23:59:08 2025 +0300
+
+    Conspect
+
+[33mcommit 25f3bc1c8c1cc485895fbf5d84fbc1a6a8f2c173[m
+Author: Владимир Яцулевич <vovas53@yandex.ru>
+Date:   Wed Jan 29 11:19:04 2025 +0300
+
+    Latex fixed
+
+[33mcommit 3a6f5af55c779d3dd84dd01b5a12eebb5da8f6c6[m
+Author: Владимир Яцулевич <vovas53@yandex.ru>
+Date:   Wed Jan 29 02:46:36 2025 +0300
+
+    Dynamic metainf
+
+[33mcommit 0a8e52fa2e6c0c4120a59a4d5683ebdf43438883[m
+Author: Владимир Яцулевич <vovas53@yandex.ru>
+Date:   Wed Jan 29 02:33:55 2025 +0300
+
+    Dynamic metainf
+
+[33mcommit 1a6ef6eaca571c6b0128c6414d9fe97db4a8212d[m
+Author: Владимир Яцулевич <vovas53@yandex.ru>
+Date:   Wed Jan 29 01:46:02 2025 +0300
+
+    Dynamic metainf
+
+[33mcommit 7c5148ea0cfd992f8b4e17ca8edb54e34ab1e54b[m
+Author: Владимир Яцулевич <vovas53@yandex.ru>
+Date:   Wed Jan 29 01:42:56 2025 +0300
+
+    Dynamic metainf
+
+[33mcommit 2df71d749b3c884d41098c11906c23618d47df97[m
+Author: Владимир Яцулевич <vovas53@yandex.ru>
+Date:   Wed Jan 29 00:41:15 2025 +0300
+
+    Some changes
+
+[33mcommit 5b8097fa06ac62416e1114e07f74fcad57463012[m
+Author: Владимир Яцулевич <vovas53@yandex.ru>
+Date:   Wed Jan 29 00:26:05 2025 +0300
+
+    Somethink
+
+[33mcommit 69c1023ece0788a2f817eb24e64ff7bb0cacfec8[m
+Merge: 6c66c28 c48a5fa
+Author: Yatsulevich Vladimir <85439868+TovarischComrad@users.noreply.github.com>
+Date:   Mon Jan 27 00:01:29 2025 +0300
+
+    Merge pull request #2 from CryptoNerf/E.V
+    
+    E.V
+
+[33mcommit c48a5fae38ae3183d5a39aaade75e8831daeff4b[m[33m ([m[1;31morigin/E.V[m[33m, [m[1;32mE.V[m[33m)[m
+Merge: 5a35522 6c66c28
+Author: Yatsulevich Vladimir <85439868+TovarischComrad@users.noreply.github.com>
+Date:   Mon Jan 27 00:01:15 2025 +0300
+
+    Merge branch 'E.V' into E.V
+
+[33mcommit 5a355224d522b6926876c64906a4d209b934e34b[m
+Author: CryptoNerf <anuta1711_98@mail.ru>
+Date:   Mon Jan 27 00:42:08 2025 +0400
+
+    new branch
+
+[33mcommit 0583babe7ef8a3aa3a2775413b760c2d0e455c5f[m
+Author: CryptoNerf <anuta1711_98@mail.ru>
+Date:   Mon Jan 27 00:34:59 2025 +0400
+
+    minor edit's#2
+
+[33mcommit 6b609ba0c9865225cecf8090ea440a7096eee431[m
+Author: CryptoNerf <anuta1711_98@mail.ru>
+Date:   Sat Jan 25 01:52:21 2025 +0400
+
+    minor edits
+
+[33mcommit 6c66c2825452a3535c1ccd11933d158670a9841b[m
+Author: Владимир Яцулевич <vovas53@yandex.ru>
+Date:   Thu Jan 23 01:00:52 2025 +0300
+
+    Tg and VK links
+
+[33mcommit cf54d30e2a9cad83d5cb0aa08f35a890bed87a1b[m
+Author: Владимир Яцулевич <vovas53@yandex.ru>
+Date:   Thu Jan 23 00:53:31 2025 +0300
+
+    Tg and VK links
+
+[33mcommit 947bee33bffde88976f849df5842fbf3bc1c8ba4[m
+Author: CryptoNerf <anuta1711_98@mail.ru>
+Date:   Wed Jan 22 01:34:43 2025 +0400
+
+    4
+
+[33mcommit 33d6396716ffb058263c92c455de4775939acfe8[m
+Author: CryptoNerf <anuta1711_98@mail.ru>
+Date:   Wed Jan 22 01:27:24 2025 +0400
+
+    3
+
+[33mcommit c1e37e0f1d58083a5baadb7d2e42a1b1d68da807[m
+Merge: 928c997 d98283e
+Author: Yatsulevich Vladimir <85439868+TovarischComrad@users.noreply.github.com>
+Date:   Wed Jan 22 00:24:57 2025 +0300
+
+    Merge pull request #1 from CryptoNerf/main
+    
+    EmileAndYatsulevichVVReposit
+
+[33mcommit d98283e4a36e50370f14b91e37ed5018561264c3[m
+Author: CryptoNerf <anuta1711_98@mail.ru>
+Date:   Wed Jan 22 01:22:12 2025 +0400
+
+    Emile2
+
+[33mcommit 3cb04517f2d66698c9a26bcabd70bee4c4c0c624[m
+Author: CryptoNerf <anuta1711_98@mail.ru>
+Date:   Wed Jan 22 01:14:20 2025 +0400
+
+    HiEmile
+
+[33mcommit 928c9975e0c285cb19cad5b45aa1a1df6f7f2b9d[m[33m ([m[1;31mupstream/main[m[33m, [m[1;31mupstream/HEAD[m[33m)[m
+Author: Владимир Яцулевич <vovas53@yandex.ru>
+Date:   Sun Jan 19 15:39:37 2025 +0300
+
+    Termodynamic added
+
+[33mcommit 1abd8389767d28748d762eb2844e4083d168aa81[m
+Author: Владимир Яцулевич <vovas53@yandex.ru>
+Date:   Sun Jan 19 00:38:09 2025 +0300
+
+    for Emile
+
+[33mcommit ceff4de3874eb46172d13c74ae9526cb09ccd1bd[m
+Author: Владимир Яцулевич <vovas53@yandex.ru>
+Date:   Sat Jan 18 18:47:34 2025 +0300
+
+    Added tasks from gmurman
+
+[33mcommit a72a96f1035e2d51df84e7436ace5673aaff01ef[m
+Author: Владимир Яцулевич <vovas53@yandex.ru>
+Date:   Sat Jan 18 12:35:39 2025 +0300
+
+    Privacy section for mobile phone
+
+[33mcommit 5830c6dab584a752cc1aa4f3e5ba85401bfaface[m
+Author: Владимир Яцулевич <vovas53@yandex.ru>
+Date:   Fri Jan 17 22:29:53 2025 +0300
+
+    new code style
+
+[33mcommit 32c2b7fdaf9171165a67a7092e0f67a748fd90e4[m
+Author: Владимир Яцулевич <vovas53@yandex.ru>
+Date:   Fri Jan 17 14:34:00 2025 +0300
+
+    bugfix
+
+[33mcommit ebbb903539bff5fbbe3f7ed691533444f3877e90[m
+Author: Владимир Яцулевич <vovas53@yandex.ru>
+Date:   Fri Jan 17 02:47:39 2025 +0300
+
+    Make json database
+
+[33mcommit 5e4b93a64f1f149a157c97801cdfe75b91cc711c[m
+Author: Владимир Яцулевич <vovas53@yandex.ru>
+Date:   Fri Jan 17 00:28:17 2025 +0300
+
+    fload table of content
+
+[33mcommit f6691e710357615caf6b78ec3794bfb5eb7ceb0c[m
+Author: Владимир Яцулевич <vovas53@yandex.ru>
+Date:   Sun Dec 29 19:42:36 2024 +0300
+
+    bugfix
+
+[33mcommit 98c30cc5b10e6f7102814c9403b25f010f00cf9e[m
+Author: Владимир Яцулевич <vovas53@yandex.ru>
+Date:   Sun Dec 29 02:06:58 2024 +0300
+
+    Mobile v0.0.2
+
+[33mcommit 81b4423ff96b7d4034559d30003945c93c8ee459[m
+Author: Владимир Яцулевич <vovas53@yandex.ru>
+Date:   Sat Dec 28 20:59:55 2024 +0300
+
+    Table of content change
+
+[33mcommit e4350d38db8af074652cbd5735a265d6d5a2fea4[m
+Author: Владимир Яцулевич <vovas53@yandex.ru>
+Date:   Sat Dec 28 18:02:30 2024 +0300
+
+    Mobile table of content
+
+[33mcommit 5185de352df8a92f24887d96619311777d94390f[m
+Author: Владимир Яцулевич <vovas53@yandex.ru>
+Date:   Sat Dec 28 17:59:28 2024 +0300
+
+    Mobile table of content
+
+[33mcommit ccec3670fd2b088af27b86d2dd9b9d946f0d8fd9[m
+Author: Владимир Яцулевич <vovas53@yandex.ru>
+Date:   Sat Dec 28 03:17:32 2024 +0300
+
+    Test
+
+[33mcommit 5bb94c30abff309fbbebcfc039117d1ed64b2d45[m
+Author: Владимир Яцулевич <vovas53@yandex.ru>
+Date:   Sat Dec 28 03:07:18 2024 +0300
+
+    Mobile v0.0.1
+
+[33mcommit 969cd66b388cfe4938066013c75ec27d5f8fba01[m
+Author: Владимир Яцулевич <vovas53@yandex.ru>
+Date:   Sat Dec 28 03:01:08 2024 +0300
+
+    Mobile v0.0.1
+
+[33mcommit c174c9f01a1015790794e2fe3ee235ef0c5edcca[m
+Author: Владимир Яцулевич <vovas53@yandex.ru>
+Date:   Sat Dec 28 02:55:28 2024 +0300
+
+    Mobile v0.0.1
+
+[33mcommit dfd185b25ae2746bb82313c0023daede752f3426[m
+Author: Владимир Яцулевич <vovas53@yandex.ru>
+Date:   Fri Dec 27 23:20:24 2024 +0300
+
+    Test links
+
+[33mcommit 5d79ad2ef2f094976ef2a7d8382eea41cabc465f[m
+Author: Владимир Яцулевич <vovas53@yandex.ru>
+Date:   Fri Dec 27 23:05:33 2024 +0300
+
+    Test new links
+
+[33mcommit

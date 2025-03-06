@@ -134,4 +134,16 @@
     .tc_desktop {
         display: block;
     }
+
+    .desktop-only {
+        display: block;
+    }
+    
+    .mobile-only {
+        display: none;
+    }
+
+    .mobile-main-title {
+        display: none;
+    }
 }
