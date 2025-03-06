@@ -80,6 +80,14 @@ h1, h2, h3 {
     color: var(--custom-black);
 }
 
+h2 code {
+    font-size: 1.3em;
+}
+
+h3 code {
+    font-size: 1.3em;
+}
+
 .abstract h2 {
     margin-top: 0.5rem;
     margin-bottom: 0.5rem;
@@ -94,7 +102,6 @@ h1, h2, h3 {
 
 .sections h2 {
     margin-bottom: 0.5rem;
-
 }
 
 .nav-links {
@@ -229,4 +236,11 @@ hr {
     margin-top: 0.5rem;
 }
 
+table, th, td {
+    border: 1px solid;
+}
+
+table {
+    margin: auto;
+}
 
