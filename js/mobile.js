@@ -1,19 +1,11 @@
 function TableOfContentOpen() {
     document.querySelector('.tc_mobile').classList.add('active');
-
-    document.getElementsByClassName("header")[0].style.background = "#74A0B6";
-    document.getElementsByClassName("footer")[0].style.background = "#74A0B6";
-    document.getElementsByClassName("main_content")[0].style.background = "#CCCCCC";
-    document.getElementsByClassName("python")[0].style.background = "#CCCCCC";
+    document.getElementById('main_body').classList.add('menu-active');
 }
 
 function TableOfContentClose() {
     document.querySelector('.tc_mobile').classList.remove('active');
-
-    document.getElementsByClassName("header")[0].style.background = "#91C8E4";
-    document.getElementsByClassName("footer")[0].style.background = "#91C8E4";
-    document.getElementsByClassName("main_content")[0].style.background = "#FFFFFF";
-    document.getElementsByClassName("python")[0].style.background = "#F6F6F6";
+    document.getElementById('main_body').classList.remove('menu-active');
 }
 
 window.addEventListener('resize', function(event) {
