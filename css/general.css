@@ -250,11 +250,49 @@ hr {
 
 }
 
-table, th, td {
+/* table, th, td {
     border: 1px solid;
+
 }
 
 table {
     margin: auto;
-}
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+} */
 
+table {
+    border-collapse: collapse;
+    border: 1px solid var(--custom-black);
+    /* font-family: sans-serif; */
+    /* font-size: 0.9rem; */
+    /* letter-spacing: 1px; */
+    width: 100%;
+    max-width: 500px;
+    margin: 1rem auto;
+  }
+  
+  /* caption {
+    padding: 10px;
+    font-weight: bold;
+  } */
+  
+  thead {
+    background-color: #F5E6A6;
+    font-weight: bold;
+  }
+  
+  th,
+  td {
+    border: 1px solid var(--custom-black);
+    padding: 8px 12px;
+  }
+
+  th {
+    text-align: left;
+  }
+
+  tbody > tr:nth-of-type(even) {
+    background-color: #f6f6f6;
+  }
+  
