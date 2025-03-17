@@ -169,4 +169,10 @@
     .textsentence h1 {
         display: none;
     }
+
+    #network-container {
+        height: 300px;
+    }
+
+
 }

@@ -55,7 +55,7 @@
     
     .table_of_content {
         min-height: 200px;
-        width: 150px;
+        width: 160px;
         height: 100%; /* Высота будет определяться контентом */
         max-height: 80vh; /* Максимальная высота 80% от высоты экрана */
         background: var(--custom-blue);
@@ -121,11 +121,17 @@
         display: none;
     }
     
-    .column_33 {
+    .sections {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+        gap: 1rem;
+    }
+
+    /* .column_33 {
         margin: auto;
         float: left;
         width: 33%;
-    }
+    } */
 
     .tc_mobile {
         display: none;

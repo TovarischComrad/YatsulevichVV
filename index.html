@@ -1,11 +1,15 @@
 <!DOCTYPE html>
-
+<html>
 <head>
     <meta charset="utf-8">
     <title>ΔATA.V</title>
     <link rel="stylesheet" href="/YatsulevichVV/css/general.css">
     <link rel="stylesheet" href="/YatsulevichVV/css/desktop.css">
     <link rel="stylesheet" href="/YatsulevichVV/css/mobile.css">
+    <link rel="stylesheet" href="/YatsulevichVV/css/network.css">
+
+    <!-- Библиотека vis-network -->
+    <script type="text/javascript" src="https://unpkg.com/vis-network@9.1.2/standalone/umd/vis-network.min.js"></script>
 
     <script>
         fetch('/YatsulevichVV/head.html')
@@ -18,11 +22,10 @@
     <script src="/YatsulevichVV/js/table_of_content.js"></script>
     <script src="/YatsulevichVV/js/mobile.js"></script>
     <script src="/YatsulevichVV/js/latex.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <script src="/YatsulevichVV/js/network.js"></script>
 </head>
 
 <body>
-
     <!-- Mobile version -->
     <table-of-content class="tc_mobile"></table-of-content>
 
@@ -40,10 +43,13 @@
                         математике и науке. Здесь собраны учебные и научные материалы, которые помогут вам подготовиться
                         к экзаменам, олимпиадам или просто расширить кругозор.</p>
                     <h2>Содержание сайта:</h2>
-                    <picture> 
-                        <source media="(max-width: 650px)" srcset="/YatsulevichVV/source/image/site_soul_scheme_mobile.svg" class="mobile-image">
-                        <img src="/YatsulevichVV/source/image/ssite_soul_scheme_pc.svg" alt="site soul scheme" class="desktop-image">
-                      </picture>
+                    
+                    <!-- Контейнер для интерактивной схемы -->
+                    <div id="network-container"></div>
+                    <div id="info-panel" class="info-panel">
+                        <div id="info-content"></div>
+                    </div>
+                    
                 </div>
                 <div class="imgsentence">
                     <img src="/YatsulevichVV/source/image/Vova.jpg" alt="Владимир Яцулевич" class="profile-image">
@@ -57,5 +63,5 @@
         </div>
     </div>
     <footer-component></footer-component>
-
 </body>
+</html>
