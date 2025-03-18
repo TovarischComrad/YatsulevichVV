@@ -16,82 +16,168 @@ document.addEventListener('DOMContentLoaded', function() {
         },
         { 
             id: 2, 
-            label: "Разбор задач", 
+            label: "IT", 
             group: "content",
-            title: "Разбор задач",
+            title: "IT",
             description: "Подробный анализ и решение практических задач по различным предметам"
         },
         { 
             id: 3, 
-            label: "Авторские конспекты", 
+            label: "ОГЭ", 
             group: "content",
-            title: "Авторские конспекты",
+            title: "ОГЭ",
             description: "Уникальные учебные материалы и конспекты от экспертов"
         },
         { 
             id: 4, 
-            label: "Современные лекции", 
+            label: "ЕГЭ", 
             group: "content",
-            title: "Современные лекции",
+            title: "ЕГЭ",
             description: "Актуальные образовательные лекции по различным темам"
         },
-        // Добавляем дочерние узлы для Разбор задач
         { 
             id: 5, 
-            label: "конспект1", 
-            group: "subcontent",
-            url: "/YatsulevichVV/privacy.html"
+            label: "НАУКА", 
+            group: "content",
+            title: "НАУКА",
+            description: "Актуальные образовательные лекции по различным темам"
         },
         { 
             id: 6, 
-            label: "конспект2", 
-            group: "subcontent",
-            url: "razbor_konspekt2.html"
+            label: "КНИГИ", 
+            group: "content",
+            title: "КНИГИ",
+            description: "Актуальные образовательные лекции по различным темам"
         },
+        // Добавляем узлы подкатегорий
         { 
             id: 7, 
-            label: "конспект3", 
-            group: "subcontent",
-            url: "razbor_konspekt3.html"
+            label: "Язык программирования Python", 
+            group: "chapter",
+            title: "Язык программирования Python",
+            description: "Актуальные образовательные лекции по различным темам"
         },
-        // Добавляем дочерние узлы для Авторские конспекты
         { 
             id: 8, 
-            label: "конспект1", 
-            group: "subcontent",
-            url: "avtorskie_konspekt1.html"
+            label: "Математика", 
+            group: "chapter",
+            title: "Математика-ОГЭ",
+            description: "Актуальные образовательные лекции по различным темам"
         },
         { 
             id: 9, 
-            label: "конспект2", 
-            group: "subcontent",
-            url: "avtorskie_konspekt2.html"
+            label: "Информатика", 
+            group: "chapter",
+            title: "Информатика-ОГЭ",
+            description: "Актуальные образовательные лекции по различным темам"
         },
         { 
             id: 10, 
-            label: "конспект3", 
-            group: "subcontent",
-            url: "avtorskie_konspekt3.html"
+            label: "Физика", 
+            group: "chapter",
+            title: "Физика-ОГЭ",
+            description: "Актуальные образовательные лекции по различным темам"
         },
-        // Добавляем дочерние узлы для Современные лекции
         { 
             id: 11, 
-            label: "конспект1", 
-            group: "subcontent",
-            url: "lectures_konspekt1.html"
+            label: "Математика", 
+            group: "chapter",
+            title: "Математика-ЕГЭ",
+            description: "Актуальные образовательные лекции по различным темам"
         },
         { 
             id: 12, 
-            label: "конспект2", 
-            group: "subcontent",
-            url: "lectures_konspekt2.html"
+            label: "Информатика", 
+            group: "chapter",
+            title: "Информатика-ЕГЭ",
+            description: "Актуальные образовательные лекции по различным темам"
         },
         { 
             id: 13, 
-            label: "конспект3", 
+            label: "Физика", 
+            group: "chapter",
+            title: "Физика-ЕГЭ",
+            description: "Актуальные образовательные лекции по различным темам"
+        },
+        { 
+            id: 14, 
+            label: "Современные методы квантовых вычислений", 
+            group: "chapter",
+            title: "Современные методы квантовых вычислений",
+            description: "Актуальные образовательные лекции по различным темам"
+        },
+        { 
+            id: 15, 
+            label: "Теория вероятностей и математическая статистика", 
+            group: "chapter",
+            title: "Теория вероятностей и математическая статистика",
+            description: "Актуальные образовательные лекции по различным темам"
+        },
+        // Добавляем дочерние узлы для IT
+        { 
+            id: 16, 
+            label: "Введение в Python", 
             group: "subcontent",
-            url: "lectures_konspekt3.html"
-        }
+            url: "/YatsulevichVV/privacy.html"
+        },
+        // Добавляем дочерние узлы для ОГЭ
+        { 
+            id: 17, 
+            label: "Задание 21", 
+            group: "subcontent",
+            url: "/YatsulevichVV/html/oge/math/oge_math_21_a.html"
+        },
+        { 
+            id: 18, 
+            label: "Формулы", 
+            group: "subcontent",
+            url: "/YatsulevichVV/html/oge/phys/oge_phys_formulas.html"
+        },
+        { 
+            id: 19, 
+            label: "Термодинамика", 
+            group: "subcontent",
+            url: "/YatsulevichVV/html/oge/phys/termodynamic.html"
+        },
+        // Добавляем дочерние узлы для ЕГЭ
+        { 
+            id: 20, 
+            label: "Задание 17", 
+            group: "subcontent",
+            url: "/YatsulevichVV/html/ege/inf/ege_inf_task17.html"
+        },
+        // Добавляем дочерние узлы для НАУКА
+        { 
+            id: 21, 
+            label: "Оптимизационные модели", 
+            group: "subcontent",
+            url: "/YatsulevichVV/html/science/modern_qc/modern_qc_lecture1.html"
+        },
+        { 
+            id: 22, 
+            label: "Примеры задач", 
+            group: "subcontent",
+            url: "/YatsulevichVV/html/science/modern_qc/modern_qc_lecture2.html"
+        },
+        { 
+            id: 23, 
+            label: "Способы представления оптимизационных задач", 
+            group: "subcontent",
+            url: "/YatsulevichVV/html/science/modern_qc/modern_qc_lecture3.html"
+        },
+        // Добавляем дочерние узлы для КНИГИ
+        { 
+            id: 24, 
+            label: "Основные понятия теории вероятностей", 
+            group: "subcontent",
+            url: "/YatsulevichVV/html/high_math/gmurman/chapter1.html"
+        },
+        { 
+            id: 25, 
+            label: "Выборочный метод", 
+            group: "subcontent",
+            url: "/YatsulevichVV/html/high_math/gmurman/chapter1.html"
+        },
     ]);
 
     // Создаем связи
@@ -99,18 +185,32 @@ document.addEventListener('DOMContentLoaded', function() {
         { from: 1, to: 2, arrows: "to" },
         { from: 1, to: 3, arrows: "to" },
         { from: 1, to: 4, arrows: "to" },
-        // Связи для Разбор задач
-        { from: 2, to: 5, arrows: "to" },
-        { from: 2, to: 6, arrows: "to" },
+        { from: 1, to: 5, arrows: "to" },
+        { from: 1, to: 6, arrows: "to" },
+        // Связи для IT
         { from: 2, to: 7, arrows: "to" },
-        // Связи для Авторские конспекты
+        { from: 7, to: 16, arrows: "to" },
+        // Связи для ОГЭ
         { from: 3, to: 8, arrows: "to" },
         { from: 3, to: 9, arrows: "to" },
         { from: 3, to: 10, arrows: "to" },
-        // Связи для Современные лекции
+        { from: 8, to: 17, arrows: "to" },
+        { from: 10, to: 18, arrows: "to" },
+        { from: 10, to: 19, arrows: "to" },
+        // Связи для ЕГЭ
         { from: 4, to: 11, arrows: "to" },
         { from: 4, to: 12, arrows: "to" },
-        { from: 4, to: 13, arrows: "to" }
+        { from: 4, to: 13, arrows: "to" },
+        { from: 12, to: 20, arrows: "to" },
+        // Связи для НАУКИ
+        { from: 5, to: 14, arrows: "to" },
+        { from: 14, to: 21, arrows: "to" },
+        { from: 14, to: 22, arrows: "to" },
+        { from: 14, to: 23, arrows: "to" },
+        // Связи для КНИГ
+        { from: 6, to: 15, arrows: "to" },
+        { from: 15, to: 24, arrows: "to" },
+        { from: 15, to: 25, arrows: "to" },
     ]);
 
     // Настройки сети
@@ -159,7 +259,7 @@ document.addEventListener('DOMContentLoaded', function() {
         physics: {
             enabled: true,
             barnesHut: {
-                gravitationalConstant: -2000,
+                gravitationalConstant: -3600,
                 centralGravity: 0.15,
                 springLength: 125,
                 springConstant: 0.05
