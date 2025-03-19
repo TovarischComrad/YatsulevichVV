@@ -101,14 +101,14 @@ document.addEventListener('DOMContentLoaded', function() {
         },
         { 
             id: 14, 
-            label: "Современные методы квантовых вычислений", 
+            label: "Современные методы\nквантовых вычислений", 
             group: "chapter",
             title: "Современные методы квантовых вычислений",
             description: "Актуальные образовательные лекции по различным темам"
         },
         { 
             id: 15, 
-            label: "Теория вероятностей и математическая статистика", 
+            label: "Теория вероятностей\nи математическая статистика", 
             group: "chapter",
             title: "Теория вероятностей и математическая статистика",
             description: "Актуальные образовательные лекции по различным темам"
@@ -118,7 +118,7 @@ document.addEventListener('DOMContentLoaded', function() {
             id: 16, 
             label: "Введение в Python", 
             group: "subcontent",
-            url: "/YatsulevichVV/privacy.html"
+            url: "/YatsulevichVV/html/it/python/python_first.html"
         },
         // Добавляем дочерние узлы для ОГЭ
         { 
@@ -161,14 +161,14 @@ document.addEventListener('DOMContentLoaded', function() {
         },
         { 
             id: 23, 
-            label: "Способы представления оптимизационных задач", 
+            label: "Способы представления\nоптимизационных задач", 
             group: "subcontent",
             url: "/YatsulevichVV/html/science/modern_qc/modern_qc_lecture3.html"
         },
         // Добавляем дочерние узлы для КНИГИ
         { 
             id: 24, 
-            label: "Основные понятия теории вероятностей", 
+            label: "Основные понятия\nтеории вероятностей", 
             group: "subcontent",
             url: "/YatsulevichVV/html/high_math/gmurman/chapter1.html"
         },
