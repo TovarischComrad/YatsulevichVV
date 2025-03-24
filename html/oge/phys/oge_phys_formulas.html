@@ -29,50 +29,571 @@
             <div class="abstract">
                 <div class="linkpdf">
                     <h1>Формулы</h1>
-                    <a class="download-btn" href="#"><img src="/YatsulevichVV/source/image/iconpdf.svg" alt="icon download pdf"></a>
+                    <a class="download-btn" href="/YatsulevichVV/source/pdf/OGE. Phys. Formulas.pdf" download><img src="/YatsulevichVV/source/image/iconpdf.svg" alt="icon download pdf"></a>
                 </div>
-                <div class="row">
-                    <div class="column_33">
-                        <h2>Механика</h2>
-                        <h3>Кинематика</h3>
-                        \begin{align}
-                            S &= v t\\
-                            S &= v_0t + \frac{at^2}{2}
-                        \end{align}
-                        <h3>Динамика</h3>
-                        \begin{align}
-                            &F = ma\\
-                            &F_{12} = -F_{21}\\
-                            &F_{\text{тяж}} = mg\\
-                            &F_{\text{грав}} = G\frac{m_1 m_2}{R^2}\\
-                            &F_{\text{упр}} = k\Delta x
-                        \end{align}
-                        <h3>Энергия и работа</h3>
-                        \begin{align}
-                            &A = F \cdot S\\
-                            &E_{\text{к}} = \frac{mv^2}{2}\\
-                            &E_{\text{п}} = mgh\\
-                            &P = \frac{A}{t}\\
-                            &\eta = \frac{A_{\text{п}}}{A_{\text{с}}} \cdot 100 \%
-                        \end{align}
+
+                <div class="body_50">
+                    <div class="column_50">
+                        <h2>Кинематика</h2>
+
+                        <h3>Равномерное прямолинейное движение</h3>
+                        <p class="formulas">
+                            \[
+                                S = vt \quad v = \frac{s}{t} \quad t = \frac{s}{v}
+                            \]
+                        </p>
+                        
+                        <p class="sentence">
+                            $S$ &mdash; расстояние [м].</br>
+                            $t$ &mdash; время [c].</br>
+                            $v$ &mdash; скорость [м/c].
+                        </p>
+                        
+                        
+                        <h3>Равноускоренное прямолинейное движение</h3>
+                        <p class="formulas">
+                            \[
+                                v_{\text{ср}} = \frac{S}{t} \quad a = \frac{v - v_0}{t} \quad v = v_0 + at
+                            \]
+                            \[
+                                S = v_0t + \frac{at^2}{2} \quad S = \frac{v^2 - v_0^2}{2a}
+                            \]
+                        </p>
+                        
+                        <p class="sentence">
+                        $S$ &mdash; расстояние [м].</br>
+                        $t$ &mdash; время [c].</br>
+                        $v$ &mdash; скорость [м/c].</br>
+                        $v_{\text{ср}}$ &mdash; средняя скорость [м/c].</br>
+                        $v_0$ &mdash; начальная скорость [м/с].</br>
+                        $a$ &mdash; ускорение [м/с$^2$].
+                        </p>
+                        
+                        
+                        <h3>Движение по окружности</h3>
+                        <p class="formulas">
+                            \[
+                                a_{\text{ц}} = \frac{v^2}{R}
+                            \]
+                        </p>
+                        <p class="sentence">
+                            $a_{\text{ц}}$ &mdash; центростремительно ускорение [м/с$^2$].</br>
+                            $v$ &mdash; скорость [м/с].</br>
+                            $R$ &mdash; радиус окружности [м].
+                        </p>
+
+                        <h2>Динамика</h2>
+
+<h3>Законы Ньютона</h3>
+<p class="formulas">
+    \[
+        F = ma \quad F_1 = -F_2
+    \]
+</p>
+
+<p class="sentence">
+$F$ &mdash; сила [Н].</br>
+$m$ &mdash; масса [кг].</br>
+$a$ &mdash; ускорение [м/с$^2$].</br>
+$F_1$ &mdash; сила действия [Н].</br>
+$F_2$ &mdash; сила противодействия [Н].
+</p>
+
+
+<h3>Импульс тела</h3>
+<p class="formulas">
+    \[
+        p = mv \quad p - p_0 = Ft \quad p_{\text{до}} = p_{\text{после}}
+    \]
+</p>
+<p class="sentence">
+$p$ &mdash; импульс [$\text{кг}\cdot\text{м}/\text{с}$].</br>
+$p_0$ &mdash; начальный импульс [$\text{кг}\cdot\text{м}/\text{с}$].</br>
+$p_{\text{до}}$ &mdash; импульс до взаимодействия [$\text{кг}\cdot\text{м}/\text{с}$].</br>
+$p_\text{после}$ &mdash; импульс после взаимодействия [$\text{кг}\cdot\text{м}/\text{с}$].</br>
+$v$ &mdash; скорость [м/c].</br>
+$F$ &mdash; сила [Н].</br>
+$m$ &mdash; масса [кг].</br>
+$t$ &mdash; время [c].</br>
+</p>
+
+
+<h3>Силы</h3>
+<p class="formulas">
+    \[
+        \rho = \frac{m}{V} \quad F_{\text{тр}} = \mu N \quad F_{\text{упр}} = k \Delta x
+    \]
+</p>
+<p class="sentence">
+$m$ &mdash; масса [кг].</br>
+$V$ &mdash; объём [м$^3$].</br>
+$\rho$ &mdash; плотность [кг/м$^3$].</br>
+$F_{\text{тр}}$ &mdash; сила трения [Н].</br>
+$\mu$ &mdash; коэффициент трения.</br>
+$N$ &mdash; сила реакции опоры [Н].</br>
+$F_{\text{упр}}$ &mdash; сила упругости [Н].</br>
+$k$ &mdash; коэффициент жёсткости [Н/м].</br>
+$\Delta x$ &mdash; длина растяжения [м].</br>
+</p>
+
+
+<p class="formulas">
+    \[
+        F_{\text{тяж}} = mg \quad F_{\text{гр}} = G\frac{m_1m_2}{R^2}
+    \]
+    \[
+        g \approx 9,81 \text{ м/c}^2
+    \]
+    \[
+        G\approx 6,67 \cdot 10^{-11} \frac{\text{ м}^3 }{\text{кг}\cdot\text{с}^2}
+    \]
+</p>
+<p class="sentence">
+$m_1, m_2$ &mdash; масса [кг].</br>
+$F_{\text{тяж}}$ &mdash; сила тяжести [Н].</br>
+$F_{\text{гр}}$ &mdash; сила всемирного тяготения [Н].</br>
+$g$ &mdash; ускорение свободного падения [м/с$^2$].</br>
+$R$ &mdash; расстояние [м].</br>
+$G$ &mdash; гравитационная постоянная [м$^3$кг$^{-1}$с$^{-2}$].
+</p>
+
+<h2>Статика</h2>
+<h3>Момент силы</h3>
+<p class="formulas">
+    \[
+        M = Fd \quad F_1d_1 = F_2d_2
+\]
+</p>
+<p class="sentence">
+$M$ &mdash; момент силы [Н$\cdot$м].</br>
+$F, F_1, F_2$ &mdash; сила [Н].</br>
+$d, d_1, d_2$ &mdash; расстояние [м].
+</p>
+<h2>Работа и энергия</h2>
+<h3>Работа и мощность</h3>
+<p class="formulas">
+    \[
+        A = FS \quad P = \frac{A}{t}
+    \]
+    \[
+    \eta = \frac{A_{\text{пол}}}{A_{\text{зат}}} \cdot 100\%
+    \]
+</p>
+<p class="sentence">
+    $A$ &mdash; работа [Дж].</br>
+    $F$ &mdash; сила [Н].</br>
+    $S$ &mdash; перемещение [м].</br>
+    $P$ &mdash; мощность [Вт].</br>
+    $t$ &mdash; время [c].</br>
+    $\eta$ &mdash; коэффициент полезного действия.</br>
+    $A_{\text{пол}}$ &mdash; полезная работа [Дж].</br>
+    $A_{\text{зат}}$ &mdash; затраченная работа [Дж].</br>
+</p>
+
+
+<h3>Энергия</h3>
+<p class="formulas">
+    \[
+        E_{\text{п}} = mgh \quad E_{\text{п}} = \frac{k\Delta x^2}{2}
+    \]
+    \[
+    E_{\text{к}} = \frac{mv^2}{2} \quad E_{\text{мех}} = E_{\text{п}} + E_{\text{к}}
+    \]
+</p>
+<p class="sentence">
+    $E_{\text{п}}$ &mdash; потенциальная энергия [Дж].</br>
+    $E_{\text{к}}$ &mdash; кинетическая энергия [Дж].</br>
+    $E_{\text{мех}}$ &mdash; механическая энергия [Дж].</br>
+    $m$ &mdash; масса [кг].</br>
+    $g$ &mdash; ускорение свободного падения [м/с$^2$].</br>
+    $h$ &mdash; высота [м].</br>
+    $k$ &mdash; коэффициент жёсткости [Н/м].</br>
+    $\Delta x$ &mdash; растяжение [м].</br>
+    $v$ &mdash; скорость [м/с].</br>
+</p>
+
+
+<h2>Гидростатика</h2>
+<h3>Давление и сила Архимеда</h3>
+<p class="formulas">
+    \[
+        F = pS \quad p = \rho g h \quad F_{\text{Арх}} = \rho g V
+    \]
+</p>
+<p class="sentence">
+    $p$ &mdash; давление [Па].</br>
+    $F$ &mdash; сила давления [Н].</br>
+    $S$ &mdash; площадь [м$^2$].</br>
+    $\rho$ &mdash; плотность [кг/м$^3$].</br>
+    $h$ &mdash; высота [м].</br>
+    $F_{\text{Арх}}$ &mdash; сила Архимеда [Н].</br>
+    $V$ &mdash; объём [м$^3$].
+</p>
+
+        <h2>Термодинамика</h2>
+<h3>Теплота нагревания/охлаждения</h3>
+<p class="formulas">
+    \[
+        Q_{\text{н}} = cm(t_2 - t_1) \quad T = t + 273
+    \]
+</p>
+<p class="sentence">
+    $Q_{\text{н}}$ &mdash; теплота нагревания/охлаждения [Дж].</br>
+    $c$ &mdash; удельная теплоёмкость [Дж/(кг$\cdot$К)].</br>
+    $m$ &mdash; масса [кг].</br>
+    $t_1$ &mdash; начальная температура [К].</br>
+    $t_2$ &mdash; конечная температура [К].</br>
+    $T$ &mdash; температура по шкале Кельвина [К].</br>
+    $t$ &mdash; температура по шкале Цельсия [$^\circ$C].
+</p>
+
+
+<h3>Теплота сгорания топлива, плавления, парообразования</h3>
+<p class="formulas">
+    \[
+        Q_{\text{сг}} = qm \quad Q_{\text{пл}} = \lambda m \quad Q_{\text{пар}} = Lm
+    \]
+</p>
+<p class="sentence">
+    $Q_{\text{сг}}$ &mdash; теплота сгорания топлива [Дж].</br>
+    $q$ &mdash; удельная теплота сгорания топлива [Дж/кг].</br>
+    $m$ &mdash; масса [кг].</br>
+    $Q_{\text{пл}}$ &mdash; теплота плавления/кристаллизации [Дж].</br>
+    $q$ &mdash; удельная теплота плавления/кристаллизации [Дж/кг].</br>
+    $Q_{\text{пар}}$ &mdash; теплота парообразования/конденсации [Дж].</br>
+    $L$ &mdash; удельная теплота парообразования/конденсации [Дж/кг].
+</p>
+
+
+
+<h3>Энергия</h3>
+<p class="formulas">
+    \[
+        Q_{\text{отд}} = Q_{\text{пол}} \quad E = E_{\text{мех}} + U 
+    \]
+    \[
+    \eta = \frac{Q_{\text{н}} - Q_{\text{x}}}{Q_{\text{н}}}\cdot100\%
+    \]
+</p>
+<p class="sentence">
+    $Q_{\text{отд}}$ &mdash; количество отданной теплоты [Дж].</br>
+    $Q_{\text{пол}}$ &mdash; количество полученной теплоты [Дж].</br>
+    $E$ &mdash; полная энергия [Дж].</br>
+    $E_{\text{мех}}$ &mdash; механическая энергия [Дж].</br>
+    $U$ &mdash; внутренняя энергия [Дж].</br>
+    $\eta$ &mdash; коэффициент полезного действия.</br>
+    $Q_{\text{н}}$ &mdash; теплота нагревателя [Дж].</br>
+    $Q_{\text{х}}$ &mdash; теплота холодильника [Дж].
+</p>
+
+
+<h3>Влажность</h3>
+<p class="formulas">
+    \[
+        \varphi = \frac{\rho_{\text{парц}}}{\rho_{\text{нас}}}\cdot 100 \%  
+    \]
+    \[
+    \varphi = \frac{p_{\text{парц}}}{p_{\text{нас}}}\cdot 100 \%
+    \]
+</p>
+<p class="sentence">
+    $\varphi$ &mdash; относительная влажность.</br>
+    $\rho_{\text{парц}}$ &mdash; парциальная плотность воздуха [кг/м$^3$].</br>
+    $\rho_{\text{нас}}$ &mdash; плотность насыщенного пара [кг/м$^3$].</br>
+    $p_{\text{парц}}$ &mdash; парциальное давление воздуха [кг/м$^3$].</br>
+    $p_{\text{нас}}$ &mdash; давление насыщенного пара [кг/м$^3$].</br>
+</p>
                     </div>
-                    <div class="column_33">
-                        <h2>Термодинамика</h2>
-                        \[
-                            Q_{\text{нагр}} = cm(t_2 - t_1)
-                        \]
-    
-                    </div>
-                    <div class="column_33">
-                        <h2>Электромагнетизм</h2>
-                        \[
-                            F_{\text{Кул}} = k\frac{q_1\cdot q_2}{R^2}
-                        \]
-                        \[
-                            U = IR
-                        \]
+
+
+                    <div class="column_50">
+
+                        <h2>Электричество</h2>
+<h3>Электрические заряды</h3>
+<p class="formulas">
+    \[
+        F_{\text{Кул}} = k\frac{q_1q_2}{r^2} \quad q = N e
+    \]
+    \[
+        k \approx 9 \cdot 10^9 \frac{\text{Н} \cdot \text{м}^2}{\text{Кл}^2} 
+    \]
+    \[
+    e\approx -1,6\cdot10^{-19} \text{ Кл}
+    \]
+</p>
+<p class="sentence">
+    $F_{\text{Кул}}$ &mdash; сила Кулона [Н].</br>
+    $k$ &mdash; постоянная Кулона [Н$\cdot$м$^2$/Кл$^2$].</br>
+    $q, q_1, q_2$ &mdash; электрические заряды [Кл].</br>
+    $r$ &mdash; расстояние между зарядами [м].</br>
+    $N$ &mdash; количество электронов.</br>
+    $e$ &mdash; заряд электрона [Кл].
+</p>
+
+
+<h3>Сила тока, напряжение</h3>
+<p class="formulas">
+    \[
+        I = \frac{q}{t} \quad U = \frac{A}{q}
+    \]
+</p>
+<p class="sentence">
+    $I$ &mdash; сила тока [А].</br>
+    $q$ &mdash; электрический заряд [Кл].</br>
+    $t$ &mdash; время [c].</br>
+    $U$ &mdash; напряжение [В].</br>
+    $A$ &mdash; работа [Дж].</br>
+</p>
+
+
+<h3>Закон Ома, сопротивление</h3>
+<p class="formulas">
+    \[
+        U = IR \quad R = \frac{\rho l}{S}
+    \]
+</p>
+<p class="sentence">
+    $I$ &mdash; сила тока [А].</br>
+    $U$ &mdash; напряжение [В].</br>
+    $R$ &mdash; сопротивление [Ом].</br>
+    $\rho$ &mdash; удельное сопротивление [Ом$\cdot$м/мм$^2$].</br>
+    $l$ &mdash; длина проводника [м].</br>
+    $S$ &mdash; площадь поперечного сечения проводника [мм$^2$].
+</p>
+
+
+<h3>Последовательное соединение</h3>
+<p class="formulas">
+    \[
+        U_{\text{общ}} = U_1 + U_2 \quad I_{\text{общ}} = I_1 = I_2
+    \]
+    \[
+    R_{\text{общ}} = R_1 + R_2
+    \]
+</p>
+<p class="sentence">
+    $U_{\text{общ}}$ &mdash; общее напряжение [В].</br>
+    $U_1, U_2$ &mdash; напряжение на узлах [В].</br>
+    $I_{\text{общ}}$ &mdash; общая сила тока [А].</br>
+    $I_1, I_2$ &mdash; сила тока на узлах [А].</br>
+    $R_{\text{общ}}$ &mdash; общее сопротивление [Ом].</br>
+    $R_1, R_2$ &mdash; сопротивление [Ом].
+</p>
+
+
+<h3>Параллельное соединение</h3>
+<p class="formulas">
+    \[
+        U_{\text{общ}} = U_1 = U_2 \quad I_{\text{общ}} = I_1 + I_2 
+    \]
+    \[
+    \frac{1}{R_{\text{общ}}} = \frac{1}{R_1} + \frac{1}{R_2}
+    \]
+</p>
+<p class="sentence">
+    $U_{\text{общ}}$ &mdash; общее напряжение [В].</br>
+    $U_1, U_2$ &mdash; напряжение на узлах [В].</br>
+    $I_{\text{общ}}$ &mdash; общая сила тока [А].</br>
+    $I_1, I_2$ &mdash; сила тока на узлах [А].</br>
+    $R_{\text{общ}}$ &mdash; общее сопротивление [Ом].</br>
+    $R_1, R_2$ &mdash; сопротивление [Ом].
+</p>
+
+
+<h3>Закон Джоуля-Ленца</h3>
+<p class="formulas">
+    \[
+        Q = UIt \quad P = UI
+    \]
+</p>
+<p class="sentence">
+     $Q$ &mdash; количество теплоты [Дж].</br>
+     $U$ &mdash; напряжение [В].</br>
+     $I$ &mdash; сила тока [А].</br>
+     $t$ &mdash; время [с].</br>
+     $P$ &mdash; мощность [Вт].
+</p>
+
+<h2>Магнетизм</h2>
+        <h3>Индукция магнитного поля</h3>
+        <p class="formulas">
+            \[
+                B = \frac{M_{max}}{p_{m}} \quad p_m = IS \quad B = \frac{F}{Il}
+            \]
+        </p>
+        <p class="sentence">
+            $B$ &mdash; индукция магнитного поля [Тл].</br>
+            $M_{max}$ &mdash; максимальный вращающий момент [Н$\cdot$м].</br>
+            $p_m$ &mdash; магнитный момент [A$\cdot$м$^2$].</br>
+            $I$ &mdash; сила тока [А].</br>
+            $S$ &mdash; площадь контура проводника [м$^2$].</br>
+            $l$ &mdash; длина проводника [м].</br>
+            $F$ &mdash; сила действия магнитного поля [Н].
+        </p>
+        
+        
+        <h3>Магнитный поток</h3>
+        <p class="formulas">
+            \[
+                \Phi = BS\sin \varphi \quad \mathcal{E} = \frac{\Delta\Phi}{\Delta t}
+            \]
+        </p>
+        <p class="sentence">
+            $\Phi$ &mdash; магнитный поток [Вб].</br>
+            $S$ &mdash; площадь контура проводника [м$^2$].</br>
+            $\varphi$ &mdash; угол между поверхностью контура и линией магнитной индукции.</br>
+            $\mathcal{E}$ &mdash; электродвижущая сила (э.д.с.) [В].</br>
+            $\Delta\Phi$ &mdash; изменение магнитного потока [Вб].</br>
+            $\Delta t$ &mdash; время [c].
+        </p>
+        
+        
+        <h3>Индуктивность катушки</h3>
+        <p class="formulas">
+            \[
+                \Phi = LI \quad \mathcal{E} = L \frac{\Delta I}{\Delta t} \quad E_{\text{маг}} = \frac{LI^2}{2}
+            \]
+        </p>
+        <p class="sentence">
+             $\Phi$ &mdash; магнитный поток [Вб].</br>
+             $L$ &mdash; индуктивность катушки [Гн].</br>
+             $I$ &mdash; сила тока [А].</br>
+             $\mathcal{E}$ &mdash; электродвижущая сила (э.д.с.) [В].</br>
+             $\Delta t$ &mdash; время [c].</br>
+             $\Delta I$ &mdash; изменение силы тока [А].</br>
+             $E_{\text{маг}}$ &mdash; энергия магнитного поля [Дж].</br>
+        </p>
+
+        <h2>Волновые процессы</h2>
+        <h3>Частота колебания</h3>
+        <p class="formulas">
+            \[
+                T = \frac{1}{\nu} \quad \nu = \frac{1}{T}
+            \]
+        </p>
+        <p class="sentence">
+            $T$ &mdash; период свободных колебаний маятника [с].</br>
+            $\nu$ &mdash; частота свободных колебания маятника [Гц].</br>
+        </p>
+        
+        <h3>Длина волны, скорость распространения волны</h3>
+        <p class="formulas">
+            \[
+                \lambda = vT \quad v = \lambda \nu
+            \]
+        </p>
+        <p class="sentence">
+            $\lambda$ &mdash; длина волны [м].</br>
+            $v$ &mdash; скорость распространения волны [м/с].</br>
+            $T$ &mdash; период колебаний [с].</br>
+            $nu$ &mdash; частота колебаний [Гц].</br>
+        </p>
+        
+        
+        <h3>Элетромагнитные волны</h3>
+        <p class="formulas">
+            \[
+                \lambda = cT = \frac{c}{\nu} \quad c \approx 3 \cdot 10^9 \text{ м/с}
+            \]
+        </p>
+        <p class="sentence">
+            $\lambda$ &mdash; длина волны [м].</br>
+            $T$ &mdash; период колебаний [с].</br>
+            $nu$ &mdash; частота колебаний [Гц].</br>
+            $c$ &mdash; скорость света в вакууме [м/с].
+        </p>
+        
+        
+        <h3>Колебательный контур</h3>
+        <p class="formulas">
+            \[
+                T = 2\pi \sqrt{LC} \quad \pi \approx 3,141592
+            \]
+        </p>
+        <p class="sentence">
+            $T$ &mdash; период колебаний [с].</br>
+            $L$ &mdash; индуктивность катушки [Гн].</br>
+            $C$ &mdash; ёмкость конденсатора [Ф].</br>
+        </p>
+        
+        
+        <h3>Энергия кванта</h3>
+        <p class="formulas">
+            \[
+                E = h\nu \quad h \approx 6 \cdot 10^{-34} \text{Дж$\cdot$c}
+            \]
+        </p>
+        <p class="sentence">
+            $E$ &mdash; энергия кванта [Дж].</br>
+            $h$ &mdash; постоянная Планка [Дж$\cdot$c].</br>
+            $nu$ &mdash; частота колебаний [Гц].</br>
+        </p>
+
+        <h2>Оптика</h2>
+<h3>Преломление света</h3>
+<p class="formulas">
+    \[
+        \frac{\sin \alpha}{\sin \beta} = n_{21} \quad n_{21} = \frac{v_{2}}{v_1} \quad n = \frac{c}{v}
+    \]
+</p>
+<p class="sentence">
+    $n_{21}$ &mdash; относительный показатель преломления второй среды относительно первой.</br>
+    $\alpha$ &mdash; угол падения.</br>
+    $\beta$ &mdash; угол преломления.</br>
+    $v_1$ &mdash; скорость света в первой среде [м/с].</br>
+    $v_2$ &mdash; скорость света во второй среде [м/с].</br>
+    $n$ &mdash; абсолютный показатель преломления среды.</br>
+    $c$ &mdash; скорость света в вакууме [м/с].</br>
+    $v$ &mdash; скорость света в среде [м/с].
+</p>
+
+<h2>Ядерная физика</h2>
+<h3>Энергия покоя</h3>
+<p class="formulas">
+    \[
+        E = m_0c^2
+    \]
+</p>
+<p class="sentence">
+    $E$ &mdash; энергия покоя [Дж].</br>
+    $m_0$ &mdash; масса покоя [кг].</br>
+    $c$ &mdash; скорость света в вакууме [м/с].</br>
+</p>
+
+
+<h3>Радиоактивный распад</h3>
+<p class="formulas">
+    \[
+        N = N_02^{-\frac{t}{T}}
+    \]
+</p>
+<p class="sentence">
+    $N$ &mdash; число радиоактивных атомов.</br>
+    $N_0$ &mdash; первоначальное число радиоактивных атомов.</br>
+    $t$ &mdash; время [c].</br>
+    $T$ &mdash; период полураспада [c].</br>
+</p>
                     </div>
                 </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
             </div>
         </div>

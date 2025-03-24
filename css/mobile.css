@@ -32,6 +32,10 @@
     .sections h2 {
         margin-bottom: 0.5rem;
     }
+    
+    .sections h3 {
+        margin-bottom: 0.5rem;
+    }
 
     .column_33 {
         margin-bottom: 1rem;
@@ -147,6 +151,13 @@
     .imgsentence {
         width: 100%;
         order: 1; /* Этот элемент будет отображаться первым */
+        flex-direction: column-reverse;
+        align-items: center;
+    }
+
+    .profile-image {
+        margin: 0px;
+        margin-top: 1rem;
     }
 
     .desktop-only {
