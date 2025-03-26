@@ -32,6 +32,10 @@
     .sections h2 {
         margin-bottom: 0.5rem;
     }
+    
+    .sections h3 {
+        margin-bottom: 0.5rem;
+    }
 
     .column_33 {
         margin-bottom: 1rem;
@@ -75,6 +79,27 @@
         width: 100%; 
         display: flex; 
         position: relative; 
+    }
+    
+    /* Затемнение фона */
+    #main_body::before {
+        content: "";
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: rgba(0, 0, 0, 0.5); /* Чёрное затемнение */
+        opacity: 0;
+        visibility: hidden;
+        transition: opacity 0.3s ease, visibility 0.3s ease;
+        z-index: 99; /* Выше, чем контент, но ниже, чем меню */
+    }
+
+    /* Когда меню открыто, затемнение появляется */
+    #main_body.menu-active::before {
+        opacity: 1;
+        visibility: visible;
     }
 
     #main_body::before {
@@ -151,6 +176,13 @@
     .imgsentence {
         width: 100%;
         order: 1; /* Этот элемент будет отображаться первым */
+        flex-direction: column-reverse;
+        align-items: center;
+    }
+
+    .profile-image {
+        margin: 0px;
+        margin-top: 1rem;
     }
 
     .desktop-only {
@@ -173,4 +205,10 @@
     .textsentence h1 {
         display: none;
     }
+
+    #network-container {
+        height: 300px;
+    }
+
+
 }

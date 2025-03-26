@@ -8,9 +8,9 @@ function TableOfContentClose() {
     document.getElementById('main_body').classList.remove('menu-active');
 }
 
-window.addEventListener('resize', function(event) {
-    var fl = document.querySelector('.tc_mobile').classList.contains("active");
-    if (fl && (window.innerWidth >= 650)) {
+// Закрытие при клике на затемнение
+document.getElementById('main_body').addEventListener('click', function (event) {
+    if (event.target === this) {
         TableOfContentClose();
     }
-}, true);
+});

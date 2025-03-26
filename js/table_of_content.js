@@ -19,6 +19,42 @@ function nav_list(json) {
         sections.push(a);
     }
 
+    var sections = [];
+    for (var i = 0; i < html.length; i++) {
+        // Создаем контейнер для элемента
+        var listItem = document.createElement("div");
+        listItem.className = "nav-item"; // Новый класс для стилизации
+
+        // Разделяем номер и текст
+        const [number, text] = name[i].split(/(?<=^\d+\. )/); // Регулярное выражение для разделения
+
+        // Если есть номер (например, "1. Основные понятия")
+        if (number && text) {
+            var numberSpan = document.createElement("span");
+            numberSpan.className = "nav-number";
+            numberSpan.textContent = number.trim();
+
+            var textSpan = document.createElement("span");
+            textSpan.className = "nav-text";
+            textSpan.textContent = text.trim();
+
+            // Создаем ссылку
+            var a = document.createElement("a");
+            a.setAttribute("href", html[i]);
+            a.appendChild(numberSpan);
+            a.appendChild(textSpan);
+            listItem.appendChild(a);
+        } else {
+            // Если нет номера (например, "Формулы")
+            var a = document.createElement("a");
+            a.setAttribute("href", html[i]);
+            a.textContent = name[i];
+            listItem.appendChild(a);
+        }
+
+        sections.push(listItem);
+    }
+
     var lst = document.getElementsByClassName("nav-links");
     if (lst[0].children.length == 0) {
         for (var i = 0; i < sections.length; i++) {
