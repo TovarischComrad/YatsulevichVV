@@ -60,7 +60,7 @@
 </code></pre>
 
 Также стоит отметить, что часто в файле имеется последняя пустая строка, которую нам учитывать не нужно. Поэтому добавим в нашу команду удаление последнего элемента. Важно подчеркнуть, что в разных файлах может быть разное форматирование, поэтому где-то не нужно удалять последний символ.
-<pre><code class="python">lst = text.split('\n')[-1]
+<pre><code class="python">lst = text.split('\n')[:-1]
 </code></pre>
 
 
@@ -71,7 +71,7 @@
 По итогу, считывание информации из файла можно описать следующим набором команд.
 <pre><code class="python">file = open('file_name', 'r')
 text = file.read()
-lst = text.split('\n')[-1]
+lst = text.split('\n')[:-1]
 lst = list(map(int, lst))
 </code></pre>
 
@@ -208,7 +208,7 @@ for i in range(n - 1):
 Остаётся только вывести полученный ответ. Общее решение примет вид.
 <pre><code class="python">file = open('task_1', 'r')
 text = file.read()
-lst = text.split('\n')[-1]
+lst = text.split('\n')[:-1]
 lst = list(map(int, lst))
 
 mx = max(lst) 
