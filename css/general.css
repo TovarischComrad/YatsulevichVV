@@ -104,6 +104,11 @@ h3 code {
     margin-bottom: 0.5rem;
 }
 
+.abstract {
+    text-align: justify;
+    line-height: 1.6;
+}
+
 
 .sections h2 {
     margin-bottom: 0.5rem;
