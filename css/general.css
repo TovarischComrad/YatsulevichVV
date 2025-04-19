@@ -83,6 +83,7 @@ p {
 
 h1, h2, h3 {
     color: var(--custom-black);
+    line-height: 100%;
 }
 
 h2 code {
@@ -94,7 +95,7 @@ h3 code {
 }
 
 .abstract h2 {
-    margin-top: 0.5rem;
+    margin-top: 1rem;
     margin-bottom: 0.5rem;
     color: var(--custom-black);
 }
@@ -306,15 +307,28 @@ hr {
 
 .linkpdf {
     display: flex;
-    align-items: start;
+    /* align-items: start; */
     justify-content: space-between;
+    align-items: center;
+}
+
+.linkpdf2 {
+    display: flex;
+    flex-wrap: wrap; /* Добавлено */
+    gap: 0.25rem;    /* по желанию — отступ между иконками */
+    align-items: center; /* Центрирует иконки по вертикали */
+    justify-content: flex-end;
+
 
 }
 
 .download-btn {
     display: flex;
     flex-shrink: 0;
-    margin-top: 5px;
+    /* margin: 0.25rem;
+    margin-top: 0;
+    margin-right: 0; */
+    /* margin-top: 5px; */
 
 }
 

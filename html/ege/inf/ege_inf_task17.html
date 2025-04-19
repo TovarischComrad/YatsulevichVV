@@ -33,7 +33,11 @@
             <div class="abstract">
                 <div class="linkpdf">
                     <h1>Информатика</h1>
-                    <a class="download-btn" href="/YatsulevichVV/source/pdf/EGE. Inf. Task 17.pdf" download><img src="/YatsulevichVV/source/image/iconpdf.svg" alt="icon download pdf"></a>
+                    <div class="linkpdf2">
+                        <a class="download-btn" href="/YatsulevichVV/source/pdf/EGE. Inf. Task 17.pdf" download><img src="/YatsulevichVV/source/image/iconpdf.svg" alt="icon download pdf"></a>
+                        <a class="download-btn" href="/YatsulevichVV/source/pdf/EGE. Inf. Task 17.pdf" download><img src="/YatsulevichVV/source/image/icongit.svg" alt="icon download pdf"></a>
+                        <a class="download-btn" href="/YatsulevichVV/source/pdf/EGE. Inf. Task 17.pdf" download><img src="/YatsulevichVV/source/image/iconvideo.svg" alt="icon download pdf"></a>
+                    </div>
                 </div>
                
 <h2>Задание 17</h2>
@@ -130,7 +134,7 @@ for i in range(n):
 
 <h3>Пример решения задач</h3>
 
-<b>Задача 1</b>
+<b>Задача 1.</b>
 
 <div class="problem">
     Файл содержит последовательность натуральных чисел, не превышающих 100 000. Назовём парой два идущих подряд элемента последовательности. Определите количество пар, для которых выполняются следующие условия:
@@ -206,7 +210,8 @@ for i in range(n - 1):
 
 
 Остаётся только вывести полученный ответ. Общее решение примет вид.
-<pre><code class="python">file = open('task_1', 'r')
+<pre><code class="python" style="
+    margin-bottom: 0;">file = open('task_1', 'r')
 text = file.read()
 lst = text.split('\n')[:-1]
 lst = list(map(int, lst))

@@ -203,5 +203,16 @@
         height: 300px;
     }
 
+    /* .linkpdf2 {
+        display: block;
+    } */
+
+    
+    .linkpdf2 img {
+        width: 34px;
+        height: 34px;
+        min-width: 34px; /* Дополнительная защита */
+        object-fit: contain;
+    }
 
 }
