@@ -202,17 +202,13 @@
     #network-container {
         height: 300px;
     }
-
-    /* .linkpdf2 {
-        display: block;
-    } */
-
     
-    .linkpdf2 img {
+    .linkpdf img {
         width: 34px;
         height: 34px;
-        min-width: 34px; /* Дополнительная защита */
+        min-width: 34px;
         object-fit: contain;
     }
+
 
 }
