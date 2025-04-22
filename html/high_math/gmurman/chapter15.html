@@ -31,45 +31,37 @@
             <div class="abstract">
                 <div class="linkpdf">
                     <h1>Теория вероятностей и математическая статистика</h1>
-                    <a class="download-btn" href="#"><img src="/YatsulevichVV/source/image/iconpdf.svg" alt="icon download pdf"></a>
+                    <a class="download-btn" href="/YatsulevichVV/source/pdf/Gmurman. Chapter15.pdf" download><img src="/YatsulevichVV/source/image/iconpdf.svg" alt="icon download pdf"></a>
                 </div>
 
-                <h2>Выборочный метод</h2>
-                <p class="sentence">
-                    <b>2.</b> Построить полигоны частот и относительных частот распределения
-                    \[
-                        \begin{matrix}
-                        x_i & 1 & 3 & 5 & 7 & 9\\
-                        n_i & 10 & 15 & 30 & 33 & 12
-                        \end{matrix}
-                    \]
-                </p>
-                <p class="sentence">
-                    <b>Решение.</b> Для построения полигона частот отметим на координатной плоскости
-                    точки с координатами $(x_i, n_i)$ и соединим их отрезками.
-                    <div class="image">
-                        <img src="/YatsulevichVV/source/image/gmurman_chapter15_task2_1.svg">
-                    </div>
-                    Для построения полигона относительных частот, сначала необходимо посчитать относительные
-                    частоты $W_i$ для каждого $x_i$ по формуле
-                    \[
-                        W_i = \frac{n_i}{n}, \quad n = \sum_{i}n_i.
-                    \]
-                    Кол-во всех объектов равно $n = 10 + 15 + 30 + 33 + 12 = 100$. Для относительных частот
-                    распределение примет вид
-                    \[
-                        \begin{matrix}
-                        x_i & 1 & 3 & 5 & 7 & 9\\
-                        n_i & 0.1 & 0.15 & 0.3 & 0.33 & 0.12
-                        \end{matrix}
-                    \]
-                    Для построения полигона относительных частот отметим на координатной плоскости
-                    точки с координатами $(x_i, W_i)$ и соединим их отрезками.
-                    <div class="image">
-                        <img src="/YatsulevichVV/source/image/gmurman_chapter15_task2_2.svg">
-                    </div>
-                </p>
+                <h2>Выборочный метод</h2> <b>1.</b> Построить график эмпирической функции распределения\begin{equation*}    \begin{matrix}        x_i && 5 && 7 && 10 && 15\\        n_i && 2 && 3 && 8 && 7    \end{matrix}\end{equation*}
                 
+                <b>Решение</b>. Для начала посчитаем суммарное количество элементов выборки.\begin{equation*}    n = 2 + 3 + 8 + 7 = 20.\end{equation*}Далее исходя из распреления можно определить эмпирической функции распределения. \begin{equation*}    F^*(x) =     \begin{cases}        0,\quad x \leqslant 5\\        \frac{2}{20},\quad 5 < x \leqslant 7\\        \frac{2 + 3}{20},\quad 7 < x \leqslant 10\\        \frac{2 + 3 + 8}{20},\quad 10 < x \leqslant 15\\        \frac{2 + 3 + 8 + 7}{20},\quad 15 < x    \end{cases}    =    \begin{cases}        0,\quad x \leqslant 5\\        0.1,\quad 5 < x \leqslant 7\\        0.25,\quad 7 < x \leqslant 10\\        0.65,\quad 10 < x \leqslant 15\\        1,\quad 15 < x    \end{cases}\end{equation*}Теперь остаётся построить график функции $F^*(x)$.        
+                <div class="image">
+                    <img src="/YatsulevichVV/source/image/gmurman/chapter15/gmurman_chapter15_task1.svg">   
+                </div>    
+                <hr>
+                <b>2</b>. Построить полигоны частот и относительных частот распределения                    \[                        \begin{matrix}                        x_i & 1 & 3 & 5 & 7 & 9\\                        n_i & 10 & 15 & 30 & 33 & 12                        \end{matrix}                    \]                    
+                <b>Решение.</b> Для построения полигона частот отметим на координатной плоскости                    точки с координатами $(x_i, n_i)$ и соединим их отрезками.                                                                   
+                <div class="image">
+                    <img src="/YatsulevichVV/source/image/gmurman/chapter15/gmurman_chapter15_task2_1.svg">   
+                </div>                                                                                     
+                 Для построения полигона относительных частот, сначала необходимо посчитать относительные                    частоты $W_i$ для каждого $x_i$ по формуле                    \[                        W_i = \frac{n_i}{n}, \quad n = \sum_{i}n_i.                    \]                    Кол-во всех объектов равно $n = 10 + 15 + 30 + 33 + 12 = 100$. Для относительных частот                    распределение примет вид                    \[                        \begin{matrix}                        x_i & 1 & 3 & 5 & 7 & 9\\                        n_i & 0.1 & 0.15 & 0.3 & 0.33 & 0.12                        \end{matrix}                    \]                    Для построения полигона относительных частот отметим на координатной плоскости                    точки с координатами $(x_i, W_i)$ и соединим их отрезками.                                                                    
+                 <div class="image">
+                    <img src="/YatsulevichVV/source/image/gmurman/chapter15/gmurman_chapter15_task2_2.svg">   
+                </div>    
+                <hr>                                         
+                 <b>3.</b> Построить гистраграммы частот и относительных частот распределения (в первом столбце указан частичный интервал, во втором&mdash; сумма частот вариант частичного интервала).\begin{equation*}    \begin{matrix}        2-5 &&& 9\\        5-8 &&& 10\\        8-11 &&& 25\\        11-14 &&& 6    \end{matrix}\end{equation*}
+                 <b>Решение.</b> В первом столбце указана левые и правые границы столбцов. А во втором стобце указана его высота. Тогда гистограмма частот примет вид.        
+                 <div class="image">
+                    <img src="/YatsulevichVV/source/image/gmurman/chapter15/gmurman_chapter15_task3_1.svg">   
+                </div>       
+                 Для построения гистограммы относительных частот нужно найти относительный частоты. Шаг $h = 3$. Тогда $n_1/h = 3$, $n_2/h = 10/3$, $n_3/h = 25/3$, $n_4/h = 6/3 = 2$. Теперь левые и правые границы будут теми же, а высота будет равна $n_i/h$. Тогда гистограмма относительных частот примет вид.       
+                 <div class="image">
+                    <img src="/YatsulevichVV/source/image/gmurman/chapter15/gmurman_chapter15_task3_2.svg">   
+                </div>      
+                
+
             </div>
         </div>
     </div>
