@@ -62,7 +62,7 @@
 
     .privacy_mobile {
         position: absolute;
-        bottom: 20px;
+        bottom: 100px;
         display: block;
     }
 
@@ -210,5 +210,12 @@
         object-fit: contain;
     }
 
+    .person-left {
+        max-width: 100%;
+    }
+
+    .person-right {
+        margin-top: 0.5rem;
+    }
 
 }

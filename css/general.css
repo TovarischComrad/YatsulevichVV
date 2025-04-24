@@ -250,7 +250,7 @@ img {
     margin-top: 20px;
 }
 
-.privacy_abstract h3 {
+.privacy_abstract h4 {
     margin-top: 1rem;
 }
 .privacy_abstract p {
@@ -409,7 +409,6 @@ hr {
     display: flex;
     justify-content: space-between;
     align-items: flex-start;
-    margin-bottom: 2em;
     flex-wrap: wrap;
 }
 
