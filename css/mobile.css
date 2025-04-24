@@ -62,7 +62,7 @@
 
     .privacy_mobile {
         position: absolute;
-        bottom: 20px;
+        bottom: 100px;
         display: block;
     }
 
@@ -202,17 +202,20 @@
     #network-container {
         height: 300px;
     }
-
-    /* .linkpdf2 {
-        display: block;
-    } */
-
     
-    .linkpdf2 img {
+    .linkpdf img {
         width: 34px;
         height: 34px;
-        min-width: 34px; /* Дополнительная защита */
+        min-width: 34px;
         object-fit: contain;
+    }
+
+    .person-left {
+        max-width: 100%;
+    }
+
+    .person-right {
+        margin-top: 0.5rem;
     }
 
 }
